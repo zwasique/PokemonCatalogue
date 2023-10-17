@@ -11,6 +11,11 @@ Pokemon::~Pokemon() {
     evolutions = nullptr;
 }
 
+bool Pokemon::operator==(const Pokemon& otherPokemon) const
+{
+    return (this->number == otherPokemon.number)
+        && (this->gen == otherPokemon.gen);
+}
 
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
 {

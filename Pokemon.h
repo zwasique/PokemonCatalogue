@@ -12,6 +12,7 @@ class Pokemon{
 private:
     std::string name;
     int number;
+    int gen;
     std::string type;
     bool Starter;
 
@@ -39,6 +40,8 @@ public:
 
     int getNumber() const;
 
+    int getGen() const;
+
     bool isLegendary() const;
 
     bool isStarter() const;
@@ -47,6 +50,8 @@ public:
 
 
     void display(std::ostream &outs) const;
+
+    bool operator==(const Pokemon& otherPokemon) const;
 
 };
 
@@ -89,6 +94,12 @@ inline
 bool Pokemon::isStarter() const
 {
     return this -> Starter;
+}
+
+inline
+int Pokemon::getGen() const
+{
+    return this-> gen;
 }
 
 #endif
