@@ -11,8 +11,8 @@ class Pokemon{
 
 private:
     std::string name;
-    int number;
     int gen;
+    int number;
     std::string type;
     bool Starter;
 
@@ -27,11 +27,11 @@ private:
     Pokemon* evolutions = nullptr;
 
 public:
-    // Default to false for all bools, blank type, number 0
+    // Default to false for all bools, blank type, number 0, generation 0
     Pokemon();
 
     // i figured we'd be reading Pokémon from a file so..?
-    Pokemon(std::string name, int num,
+    Pokemon(std::string name, int num, int gen,
             std::string type, bool starter, bool legendary);
 
     ~Pokemon();
