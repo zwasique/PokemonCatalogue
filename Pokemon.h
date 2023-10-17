@@ -74,4 +74,16 @@ std::string Pokemon::getType() const
     return this-> type;
 }
 
+inline
+bool Pokemon::isLegendary() const
+{
+    return this -> Legendary;
+}
+
+inline
+bool Pokemon::isStarter() const
+{
+    return this -> Starter;
+}
+
 #endif
