@@ -6,6 +6,11 @@ Pokemon::Pokemon()
 
 }
 
+Pokemon::~Pokemon() {
+    delete evolutions;
+    evolutions = nullptr;
+}
+
 
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
 {

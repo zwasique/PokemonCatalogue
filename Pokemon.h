@@ -22,6 +22,9 @@ private:
     /*i figured it would be cool if whenever someone outputs
      * a whole Pokémon, they could see a fact or two */
     std::vector<std::string> trivia;
+
+    Pokemon* evolutions = nullptr;
+
 public:
     // Default to false for all bools, blank type, number 0
     Pokemon();
@@ -29,6 +32,8 @@ public:
     // i figured we'd be reading Pokémon from a file so..?
     Pokemon(std::string name, int num,
             std::string type, bool starter, bool legendary);
+
+    ~Pokemon();
 
     std::string getName() const;
 
