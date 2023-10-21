@@ -1,0 +1,155 @@
+Formatting Idea:
+	Name: 
+	National Dex Number: 
+	Regional Dex Number: 
+	Generation: 
+	Type(s): 
+	Pre-Evolution: 
+	Post-Evolution: 
+	Special Tag: [starter, pseudo-legendary, legendary, mythical, etc.]
+	
+Demonstration:
+	Snivy
+	495
+	1
+	5
+	Grass
+	N/A
+	Servine
+	starter
+
+
+	Servine
+	496
+	2
+	5
+	Grass
+	Snivy
+	Serperior
+	starter
+
+
+	Serperior
+	497
+	3
+	5
+	Grass
+	Servine
+	N/A
+	starter
+	
+=======================================================================================================
+=======================================================================================================
+
+Different Regional Dexes per generation:
+    Gen 1: 
+    • Games: 
+        • Red, Green/Blue, and Yellow    
+            • Region: Kanto
+
+    Gen 2: 
+    • Games: 
+        • Gold, Silver, and Crystal
+            • Regions: Johto and Kanto
+        
+    Gen 3: 
+    • Games: 
+        • Ruby, Sapphire, and Emerald
+            • Region: Hoenn
+        • Fire Red and Leaf Green
+            • Region: Kanto
+        
+    Gen 4: 
+    • Games: 
+        • Diamond, Pearl, and Platinum
+            • Region: Sinnoh
+        • Heart Gold and Soul Silver
+            • Regions: Johto and Kanto
+        
+    Gen 5: 
+    • Games: 
+        • Black and White
+            • Region: Unova
+        • Black 2 and White 2
+            • Region: Unova
+        
+    Gen 6: 
+    • Games: 
+        • X and Y
+            • Region: Kalos
+        • Omega Ruby and Alpha Sapphire
+            • Region: Hoenn
+        
+    Gen 7:
+    • Games: 
+        • Sun and Moon
+            • Region: Alola
+        • Ultra Sun and Ultra Moon
+            • Region: Alola
+        • Let's Go Pikachu! and Let's Go Eevee!
+            • Region: Kanto
+
+    Gen 8: 
+    • Games: 
+        • Sword and Shield
+            • Region: Galar
+        • Brilliant Diamond and Shining Pearl
+            • Region: Sinnoh
+        • Legends Arceus
+            • Region: Hisui
+        
+    Gen 9: 
+    • Games: 
+        • Scarlet and Violet
+            • Region: Paldea
+			
+=======================================================================================================
+=======================================================================================================
+
+Two examples of cross-generation evolutions:
+	Eevee (Gen 1) -> Vaporeon (Gen 1)
+	Eevee (Gen 1) -> Jolteon (Gen 1)
+	Eevee (Gen 1) -> Flareon (Gen 1)
+	Eevee (Gen 1) -> Espeon (Gen 2)
+	Eevee (Gen 1) -> Umbreon (Gen 2)
+	Eevee (Gen 1) -> Leafeon (Gen 4)
+	Eevee (Gen 1) -> Glaceon (Gen 4)
+	Eevee (Gen 1) -> Slyveon (Gen 6)
+
+	Pikachu (Gen 1) -> Raichu (Gen 1)
+	Pichu (Gen 2) -> Pikachu (Gen 1) -> Raichu (Gen 1)
+	
+=======================================================================================================
+=======================================================================================================
+
+Example of creating different states for each pokemon depending on the search/sort conditions:
+
+	States: [In order: Generation, Game, and Dex (regional or national)]
+		If state = [1, any, national]
+			Pikachu
+			25/151
+			1
+			Electric
+			N/A
+			Raichu
+			N/A
+		If state = [any, any, national]
+			Pikachu
+			25/1017
+			1
+			Electric
+			Pichu
+			Raichu
+			N/A
+		If state = [4, Diamond/Pearl/Platinum, regional]
+			Pikachu
+			104/210
+			1
+			Electric
+			Pichu
+			Raichu
+			N/A
+
+=======================================================================================================
+=======================================================================================================
+
