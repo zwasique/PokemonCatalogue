@@ -29,7 +29,7 @@ public:
     Pokemon();
 
 
-    Pokemon(const std::string& name, int num, int gen, std::string type, std::string specialTag);
+    Pokemon(const std::string& nameIn, int numIn, int genIn, std::string typeIn, std::string specialTagIn);
 
     ~Pokemon();
 
