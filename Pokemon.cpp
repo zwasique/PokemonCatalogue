@@ -32,7 +32,8 @@ void Pokemon::display(std::ostream &outs) const
     outs << "Name: " << getName() << "\n"
     << "Number: " << getNumber() << "\n"
     << "Type: " << getType() << "\n"
-    << "Gen: " << getGen() << "\n";
+    << "Gen: " << getGen() << "\n"
+    << "Tag: " << getSpecialTag() << "\n";
     //something to out the trivia
 }
 
