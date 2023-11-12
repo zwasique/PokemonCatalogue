@@ -1,7 +1,7 @@
 #include "Pokemon.h"
 
 Pokemon::Pokemon()
-    :Pokemon("Unnamed", 0, 0, "None", false, false)
+    :Pokemon("Unnamed", 0, 0, "None")
 {
 
 }
@@ -27,8 +27,6 @@ void Pokemon::display(std::ostream &outs) const
 {
     outs << "Name: " << getName() << "\n"
     << "Number: " << getNumber() << "\n"
-    << "Type: " << getType() << "\n"
-    << "Starter: " << isStarter() << "\n"
-    << "Legendary: " << isLegendary() << "\n";
+    << "Type: " << getType() << "\n";
     //something to out the trivia
 }
