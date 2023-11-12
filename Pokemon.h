@@ -29,7 +29,7 @@ public:
     Pokemon();
 
 
-    Pokemon(std::string name, int num, int gen, std::string type);
+    Pokemon(std::string name, int num, int gen, std::string type, std::string specialTag);
 
     ~Pokemon();
 
@@ -39,9 +39,6 @@ public:
 
     int getGen() const;
 
-    bool isLegendary() const;
-
-    bool isStarter() const;
 
     std::string getType() const;
 

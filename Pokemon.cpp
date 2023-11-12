@@ -1,7 +1,7 @@
 #include "Pokemon.h"
 
 Pokemon::Pokemon()
-    :Pokemon("Unnamed", 0, 0, "None")
+    :Pokemon("Unnamed", 0, 0, "None", "None")
 {
 
 }
