@@ -26,6 +26,10 @@ private:
 
     Pokemon* evolutions = nullptr;
 
+/*
+* enum specialTag { None, Starter, Pseudo-legendary, Legendary, Mythical};
+*/
+
 public:
     // Default to false for all bools, blank type, number 0, generation 0
     Pokemon();
