@@ -29,7 +29,7 @@ public:
     Pokemon();
 
 
-    Pokemon(std::string name, int num, int gen, std::string type, std::string specialTag);
+    Pokemon(const std::string& name, int num, int gen, std::string type, std::string specialTag);
 
     ~Pokemon();
 
@@ -41,6 +41,8 @@ public:
 
 
     std::string getType() const;
+
+    std::string getSpecialTag() const;
 
 
     void display(std::ostream &outs) const;
@@ -83,6 +85,12 @@ inline
 int Pokemon::getGen() const
 {
     return this-> gen;
+}
+
+inline
+std::string Pokemon::getSpecialTag() const
+{
+    return this->specialTag;
 }
 
 #endif
