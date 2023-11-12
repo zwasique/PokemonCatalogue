@@ -6,6 +6,10 @@ Pokemon::Pokemon()
 
 }
 
+Pokemon::Pokemon(const std::string& name, int num, int gen, std::string type, std::string specialTag) {
+
+}
+
 Pokemon::~Pokemon() {
     delete evolutions;
     evolutions = nullptr;
@@ -27,6 +31,9 @@ void Pokemon::display(std::ostream &outs) const
 {
     outs << "Name: " << getName() << "\n"
     << "Number: " << getNumber() << "\n"
-    << "Type: " << getType() << "\n";
+    << "Type: " << getType() << "\n"
+    << "Gen: " << getGen() << "\n";
     //something to out the trivia
 }
+
+
