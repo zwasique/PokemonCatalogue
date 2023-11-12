@@ -56,6 +56,13 @@ build CMakeFiles/Pokemon.dir/Pokemon.cpp.o: CXX_COMPILER__Pokemon_Debug /Users/z
   OBJECT_DIR = CMakeFiles/Pokemon.dir
   OBJECT_FILE_DIR = CMakeFiles/Pokemon.dir
 
+build CMakeFiles/Pokemon.dir/PokemonCatalogue.cpp.o: CXX_COMPILER__Pokemon_Debug /Users/zarawasique/projects/Pokemon/PokemonCatalogue.cpp || cmake_object_order_depends_target_Pokemon
+  DEP_FILE = CMakeFiles/Pokemon.dir/PokemonCatalogue.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++14
+  INCLUDES = -I/Users/zarawasique/projects/Pokemon/.
+  OBJECT_DIR = CMakeFiles/Pokemon.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pokemon.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Pokemon
@@ -64,7 +71,7 @@ build CMakeFiles/Pokemon.dir/Pokemon.cpp.o: CXX_COMPILER__Pokemon_Debug /Users/z
 #############################################
 # Link the executable Pokemon
 
-build Pokemon: CXX_EXECUTABLE_LINKER__Pokemon_Debug CMakeFiles/Pokemon.dir/Pokemon.cpp.o
+build Pokemon: CXX_EXECUTABLE_LINKER__Pokemon_Debug CMakeFiles/Pokemon.dir/Pokemon.cpp.o CMakeFiles/Pokemon.dir/PokemonCatalogue.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/Pokemon.dir
   POST_BUILD = :

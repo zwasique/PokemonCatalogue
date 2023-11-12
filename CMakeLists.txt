@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(Pokemon
         Pokemon.cpp
-        Pokemon.h Catalogue.h)
+        Pokemon.h Catalogue.h PokemonCatalogue.cpp)

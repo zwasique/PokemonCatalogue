@@ -17,9 +17,7 @@ Pokemon::Pokemon(const std::string& nameIn, int numIn, int genIn, std::string ty
 
 }
 
-Pokemon::~Pokemon() {
-
-}
+Pokemon::~Pokemon() = default;
 
 bool Pokemon::operator==(const Pokemon& otherPokemon) const
 {
