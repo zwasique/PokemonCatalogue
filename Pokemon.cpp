@@ -18,8 +18,7 @@ Pokemon::Pokemon(const std::string& nameIn, int numIn, int genIn, std::string ty
 }
 
 Pokemon::~Pokemon() {
-    delete evolutions;
-    evolutions = nullptr;
+
 }
 
 bool Pokemon::operator==(const Pokemon& otherPokemon) const
