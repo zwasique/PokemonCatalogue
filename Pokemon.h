@@ -16,8 +16,6 @@ private:
     std::string type;
 
     std::string specialTag;
-    // may or may not be implemented
-    //std::vector<std::string> trivia;
 
     std::vector<Pokemon> *evolutions = new std::vector<Pokemon>();
 
