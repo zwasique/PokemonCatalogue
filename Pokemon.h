@@ -5,7 +5,7 @@
 #include <vector>
 
 
-//using namespace std::rel_ops; //not sure if we'll need this
+//using namespace std::rel_ops; not sure if we'll need this
 
 class Pokemon{
 
@@ -16,8 +16,7 @@ private:
     std::string type;
 
     std::string specialTag;
-    /*i figured it would be cool if whenever someone outputs
-     * a whole Pokémon, they could see a fact or two */
+    // may or may not be implemented
     //std::vector<std::string> trivia;
 
     Pokemon* evolutions = nullptr;
@@ -25,7 +24,7 @@ private:
 
 
 public:
-    // Default to false for all bools, blank type, number 0, generation 0
+    // Default to false for all bools, "Non"" type, number 0, generation 0, "None" special tag
     Pokemon();
 
 
@@ -48,13 +47,10 @@ public:
 
 class Legendary: public Pokemon {
 
-    int stat; /*i don't know enough about legendaries except
-    // for the fact that they have added abilities so this is just
-    here for now shrug */
+    int stat; /* here for now*/
 
 };
 
-//Print one Pokémon by invoking display
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster);
 
 
