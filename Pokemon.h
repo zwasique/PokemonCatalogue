@@ -18,17 +18,15 @@ private:
 
     /*i think we would have this regardless of
     * if it's a legendary or not */
-    bool Legendary;
-
+  bool Legendary;
+    std::string specialTag;
     /*i figured it would be cool if whenever someone outputs
      * a whole Pokémon, they could see a fact or two */
-    std::vector<std::string> trivia;
+    //std::vector<std::string> trivia;
 
     Pokemon* evolutions = nullptr;
 
-/*
-* enum specialTag { None, Starter, Pseudo-legendary, Legendary, Mythical};
-*/
+
 
 public:
     // Default to false for all bools, blank type, number 0, generation 0
@@ -38,6 +36,7 @@ public:
     Pokemon(std::string name, int num, int gen,
             std::string type, bool starter, bool legendary);
 
+    Pokemon(std::string name, int num, int gen, std::string type, enum
     ~Pokemon();
 
     std::string getName() const;
