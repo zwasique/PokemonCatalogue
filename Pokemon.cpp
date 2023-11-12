@@ -1,7 +1,9 @@
 #include "Pokemon.h"
 
+#include <utility>
+
 Pokemon::Pokemon()
-    :Pokemon("Unnamed", 0, 0, "None", "None")
+    :Pokemon("None", 0, 0, "None", "None")
 {
 
 }
@@ -10,8 +12,8 @@ Pokemon::Pokemon(const std::string& nameIn, int numIn, int genIn, std::string ty
     this->name = nameIn;
     this->number = numIn;
     this->gen = genIn;
-    this->type = typeIn;
-    this->specialTag = specialTagIn;
+    this->type = std::move(typeIn);
+    this->specialTag = std::move(specialTagIn);
 
 }
 

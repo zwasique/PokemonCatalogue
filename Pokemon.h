@@ -19,7 +19,7 @@ private:
     // may or may not be implemented
     //std::vector<std::string> trivia;
 
-    Pokemon* evolutions = nullptr;
+    std::vector<Pokemon> *evolutions = new std::vector<Pokemon>();
 
 
 
@@ -45,11 +45,11 @@ public:
 
 };
 
-class Legendary: public Pokemon {
+//class Legendary: public Pokemon {
 
-    int stat; /* here for now*/
+  //  int stat; /* here for now*/
 
-};
+//};
 
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster);
 
