@@ -34,14 +34,9 @@ public:
     ~Pokemon();
 
     std::string getName() const;
-
     int getNumber() const;
-
     int getGen() const;
-
-
     std::string getType() const;
-
     std::string getSpecialTag() const;
 
 
@@ -62,35 +57,6 @@ class Legendary: public Pokemon {
 //Print one Pokémon by invoking display
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster);
 
-inline
-std::string Pokemon::getName() const
-{
-    return this-> name;
-}
 
-inline
-int Pokemon::getNumber() const
-{
-    return this->number;
-}
-
-inline
-std::string Pokemon::getType() const
-{
-    return this-> type;
-}
-
-
-inline
-int Pokemon::getGen() const
-{
-    return this-> gen;
-}
-
-inline
-std::string Pokemon::getSpecialTag() const
-{
-    return this->specialTag;
-}
 
 #endif

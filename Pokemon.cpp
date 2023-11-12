@@ -37,4 +37,30 @@ void Pokemon::display(std::ostream &outs) const
     //something to out the trivia
 }
 
+std::string Pokemon::getName() const
+{
+    return this-> name;
+}
+
+int Pokemon::getNumber() const
+{
+    return this->number;
+}
+
+std::string Pokemon::getType() const
+{
+    return this-> type;
+}
+
+
+int Pokemon::getGen() const
+{
+    return this-> gen;
+}
+
+std::string Pokemon::getSpecialTag() const
+{
+    return this->specialTag;
+}
+
 
