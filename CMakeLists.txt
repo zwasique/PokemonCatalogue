@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(PokemonCatalogue
+add_executable(PokémonCatalogue
         PokemonCatalogue.cpp
         Pokemon.h Catalogue.h Pokemon.cpp Catalogue.cpp)
