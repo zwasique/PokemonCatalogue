@@ -41,6 +41,8 @@ public:
     const_iterator begin() const;
     const_iterator end() const;
 
+    void readFiles(std::string files);
+
 
 };
 
