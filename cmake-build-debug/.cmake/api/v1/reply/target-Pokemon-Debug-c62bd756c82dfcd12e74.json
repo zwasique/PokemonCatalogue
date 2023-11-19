@@ -67,7 +67,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -101,7 +102,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				3,
+				4
 			]
 		},
 		{
@@ -135,6 +137,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "PokemonCatalogue.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Catalogue.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
