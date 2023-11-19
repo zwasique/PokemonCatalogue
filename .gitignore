@@ -1,0 +1,22 @@
+# .gitignore
+
+# Ignore build artifacts
+cmake-build-debug/
+PokemonCatalogue
+build.ninja
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Ignore dependency directories
+lib/
+
+# Ignore temporary files
+Testing/Temporary/LastTest.log
+
+# Ignore system and hidden files
+.DS_Store
+Thumbs.db
