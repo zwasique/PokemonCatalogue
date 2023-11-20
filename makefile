@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Pokemon
+# Target rules for targets named PokemonCatalogue
 
 # Build rule for target.
-Pokemon: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Pokemon
-.PHONY : Pokemon
+PokemonCatalogue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PokemonCatalogue
+.PHONY : PokemonCatalogue
 
 # fast build rule for target.
-Pokemon/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/build
-.PHONY : Pokemon/fast
+PokemonCatalogue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/build
+.PHONY : PokemonCatalogue/fast
 
 Catalogue.o: Catalogue.cpp.o
 .PHONY : Catalogue.o
 
 # target to build an object file
 Catalogue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/Catalogue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Catalogue.cpp.o
 .PHONY : Catalogue.cpp.o
 
 Catalogue.i: Catalogue.cpp.i
@@ -142,7 +142,7 @@ Catalogue.i: Catalogue.cpp.i
 
 # target to preprocess a source file
 Catalogue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/Catalogue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Catalogue.cpp.i
 .PHONY : Catalogue.cpp.i
 
 Catalogue.s: Catalogue.cpp.s
@@ -150,7 +150,7 @@ Catalogue.s: Catalogue.cpp.s
 
 # target to generate assembly for a file
 Catalogue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/Catalogue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Catalogue.cpp.s
 .PHONY : Catalogue.cpp.s
 
 Pokemon.o: Pokemon.cpp.o
@@ -158,7 +158,7 @@ Pokemon.o: Pokemon.cpp.o
 
 # target to build an object file
 Pokemon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/Pokemon.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Pokemon.cpp.o
 .PHONY : Pokemon.cpp.o
 
 Pokemon.i: Pokemon.cpp.i
@@ -166,7 +166,7 @@ Pokemon.i: Pokemon.cpp.i
 
 # target to preprocess a source file
 Pokemon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/Pokemon.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Pokemon.cpp.i
 .PHONY : Pokemon.cpp.i
 
 Pokemon.s: Pokemon.cpp.s
@@ -174,7 +174,7 @@ Pokemon.s: Pokemon.cpp.s
 
 # target to generate assembly for a file
 Pokemon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/Pokemon.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Pokemon.cpp.s
 .PHONY : Pokemon.cpp.s
 
 PokemonCatalogue.o: PokemonCatalogue.cpp.o
@@ -182,7 +182,7 @@ PokemonCatalogue.o: PokemonCatalogue.cpp.o
 
 # target to build an object file
 PokemonCatalogue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/PokemonCatalogue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/PokemonCatalogue.cpp.o
 .PHONY : PokemonCatalogue.cpp.o
 
 PokemonCatalogue.i: PokemonCatalogue.cpp.i
@@ -190,7 +190,7 @@ PokemonCatalogue.i: PokemonCatalogue.cpp.i
 
 # target to preprocess a source file
 PokemonCatalogue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/PokemonCatalogue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/PokemonCatalogue.cpp.i
 .PHONY : PokemonCatalogue.cpp.i
 
 PokemonCatalogue.s: PokemonCatalogue.cpp.s
@@ -198,7 +198,7 @@ PokemonCatalogue.s: PokemonCatalogue.cpp.s
 
 # target to generate assembly for a file
 PokemonCatalogue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/PokemonCatalogue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/PokemonCatalogue.cpp.s
 .PHONY : PokemonCatalogue.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Pokemon"
+	@echo "... PokemonCatalogue"
 	@echo "... Catalogue.o"
 	@echo "... Catalogue.i"
 	@echo "... Catalogue.s"
