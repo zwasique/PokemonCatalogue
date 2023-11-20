@@ -1,0 +1,6 @@
+name
+number
+generation
+type
+specialTag
+evolution:None
