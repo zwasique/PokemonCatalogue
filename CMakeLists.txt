@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.25)
-project(PokémonCatalogue)
+project(PokemonCatalogue)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(PokémonCatalogue
+add_executable(PokemonCatalogue
         PokemonCatalogue.cpp
         Pokemon.h Catalogue.h Pokemon.cpp Catalogue.cpp)
