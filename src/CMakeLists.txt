@@ -1,13 +1,17 @@
 cmake_minimum_required(VERSION 3.25)
+
 project(PokemonCatalogue)
 
 set(CMAKE_CXX_STANDARD 14)
 
-target_include_directories(PokemonCatalogue PRIVATE ../include)
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../build)
 
 add_executable(PokemonCatalogue
         PokemonCatalogue.cpp
-        Pokemon.h Catalogue.h Pokemon.cpp Catalogue.cpp)
+        Pokemon.cpp
+	Catalogue.cpp)
+
+target_include_directories(PokemonCatalogue PRIVATE ${CMAKE_SOURCE_DIR}/../include)
 
 set_target_properties(PokemonCatalogue PROPERTIES
 	CXX_STANDARD 11
