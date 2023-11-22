@@ -1,9 +1,10 @@
 # .gitignore
 
-# Ignore build artifacts
+# Ignore build artifacts and CMake configuration
 cmake-build-debug/
 PokemonCatalogue
 build.ninja
+CMakeCache.txt
 
 # Ignore IDE-specific files
 .vscode/
