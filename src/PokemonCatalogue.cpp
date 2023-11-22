@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include "../include/Pokemon.h"
+#include "../include/Catalogue.h"
 
 //void menu();
 
