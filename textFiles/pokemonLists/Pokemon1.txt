@@ -1,151 +1,151 @@
-Bulbasaur 001 Generation 1 Grass/Poison Ivysaur
-Ivysaur 002 Generation 1 Grass/Poison Venusaur
-Venusaur 003 Generation 1 Grass/Poison None
-Charmander 004 Generation 1 Fire Charmeleon
-Charmeleon 005 Generation 1 Fire Charizard
-Charizard 006 Generation 1 Fire/Flying None
-Squirtle 007 Generation 1 Water Wartortle
-Wartortle 008 Generation 1 Water Blastoise
-Blastoise 009 Generation 1 Water None
-Caterpie 010 Generation 1 Bug Metapod
-Metapod 011 Generation 1 Bug Butterfree
-Butterfree 012 Generation 1 Bug/Flying None
-Weedle 013 1 Bug/Poison Kakuna
-Kakuna 014 1 Bug/Poison Beedrill
-Beedrill 015 1 Bug/Poison None
-Pidgey 016 1 Type Normal/Flying Pidgeotto
-Pidgeotto 017 1 Type Normal/Flying Pidgeot
-Pidgeot 018 1 Type Normal/Flying None
-Rattata 019 1 Type Normal Raticate
-Raticate 020 1 Type Normal None
-Spearow 021 1 Type Normal/Flying Fearow
-Fearow 022 1 Type Normal/Flying None
-Ekans 023 1 Type Poison Arbok
-Arbok 024 1 Type Poison None
-Pikachu 025 1 Type Electric Raichu
-Raichu 026 1 Type Electric None
-Sandshrew 027 1 Type Ground Sandslash
-Sandslash 028 1 Type Ground None
-Nidoran♀️ 029 1 Type Poison Nidorina
-Nidorina 030 1 Type Poison Nidoqueen
-Nidoqueen 031 1 Poison/Ground None
-Nidoran♂️ 032 1 Poison Nidorino
-Nidorino 033 1 Poison Nidoking
-Nidoking 034 1 Poison/Ground None
-Clefairy 035 1 Fairy Clefable
-Clefable 036 1 Fairy None
-Vulpix 037 1 Fire Ninetales
-Ninetales 038 1 Fire None
-Jigglypuff 039 1 Normal/Fairy Wigglytuff
-Wigglytuff 040 1 Normal/Fairy None
-Zubat 041 1 Poison/Flying Golbat
-Golbat 042 1 Poison/Flying Crobat
-Oddish 043 1 Grass/Poison Gloom
-Gloom 044 1 Grass/Poison Vileplume
-Vileplume 045 1 Grass/Poison None
-Paras 046 1 Bug/Grass Parasect
-Parasect 047 1 Bug/Grass None
-Venonat 048 1 Bug/Poison Venomoth
-Venomoth 049 1 Bug/Poison None
-Diglett 050 1 Ground Dugtrio
-Dugtrio 051 1 Ground None
-Meowth 052 1 Normal Persian
-Persian 053 1 Normal None
-Psyduck 054 1 Water Golduck
-Golduck 055 1 Water None
-Mankey 056 1 Fighting Primeape
-Primeape 057 1 Fighting None
-Growlithe 058 1 Fire Arcanine
-Arcanine 059 1 Fire None
-Poliwag 060 1 Water Poliwhirl
-Poliwhirl 061 1 Water Poliwrath
-Poliwrath 062 1 Water/Fighting None
-Abra 063 1 Psychic Kadabra
-Kadabra 064 1 Psychic Alakazam
-Alakazam 065 1 Psychic None
-Machop 066 1 Fighting Machoke
-Machoke 067 1 Fighting Machamp
-Machamp 068 1 Fighting None
-Bellsprout 069 1 Grass/Poison Weepinbell
-Weepinbell 070 1 Grass/Poison Victreebel
-Victreebel 071 1 Grass/Poison None
-Tentacool 072 1 Water/Poison Tentacruel
-Tentacruel 073 1 Water/Poison None
-Geodude 074 1 Rock/Ground Graveler
-Graveler 075 1 Rock/Ground Golem
-Golem 076 1 Rock/Ground None
-Ponyta 077 1 Fire Rapidash
-Rapidash 078 1 Fire None
-Slowpoke 079 1 Water/Psychic Slowbro
-Slowbro 080 1 Water/Psychic None
-Magnemite 081 1 Electric/Steel Magneton
-Magneton 082 1 Electric/Steel None
-Farfetch'd 083 1 Normal/Flying None
-Doduo 084 1 Normal/Flying Dodrio
-Dodrio 085 1 Normal/Flying None
-Seel 086 1 Water Dewgong
-Dewgong 087 1 Water/Ice None
-Grimer 088 1 Poison Muk
-Muk 089 1 Poison None
-Shellder 090 1 Water Cloyster
-Cloyster 091 1 Water/Ice None
-Gastly 092 1 Ghost/Poison Haunter
-Haunter 093 1 Ghost/Poison Gengar
-Gengar 094 1 Ghost/Poison None
-Onix 095 1 Rock/Ground None
-Drowzee 096 1 Psychic Hypno
-Hypno 097 1 Psychic None
-Krabby 098 1 Water Kingler
-Kingler 099 1 Water None
-Voltorb 100 1 Electric Electrode
-Electrode 101 1 Electric None
-Exeggcute 102 1 Grass/Psychic Exeggutor
-Exeggutor 103 1 Grass/Psychic None
-Cubone 104 1 Ground Marowak
-Marowak 105 1 Ground None
-Hitmonlee 106 1 Fighting None
-Hitmonchan 107 1 Fighting None
-Lickitung 108 1 Normal None
-Koffing 109 1 Poison Weezing
-Weezing 110 1 Poison None
-Rhyhorn 111 1 Ground/Rock Rhydon
-Rhydon 112 1 Ground/Rock None
-Chansey 113 1 Normal None
-Tangela 114 1 Grass None
-Kangaskhan 115 1 Normal None
-Horsea 116 1 Water Seadra
-Seadra 117 1 Water None
-Goldeen 118 1 Water Seaking
-Seaking 119 1 Water None
-Staryu 120 1 Water Starmie
-Sttarmie 121 1 Water/Psychic Non
-Mr. Mime 122 1 Psychic/Fairy None
-Scyther 123 1 Bug/Flying None
-Jynx 124 1 Ice/Psychic None
-Electabuzz 125 1 Electric None
-Magmar 126 1 Fire None
-Pinsir 127 1 Bug None
-Tauros 128 1 Normal None
-Magikarp 129 1 Water Gyarados
-Gyarados 130 1 Water/Flying None
-Lapras 131 1 Water/Ice None
-Ditto 132 1 Normal None
-Eevee 133 1 Normal Vaporeon/Jolteon/Flareon
-Vaporeon 134 1 Water None
-Jolteon 135 1 Electric None
-Flareon 136 1 Fire None
-Porygon 137 1 Normal None
-Omanyte 138 1 Rock/Water Omastar
-Omastar 139 1 Rock/Water None
-Kabuto 140 1 Rock/Water Kabutops
-Kabutops 141 1 Rock/Water None
-Aerodactyl 142 1 Rock/Flying None
-Snorlax 143 1 Normal None
-Articuno 144 1 Ice/Flying None
-Zapdos 145 1 Electric/Flying None
-Moltres 146 1 Fire/Flying None
-Dratini 147 1 Dragon Dragonair
-Dragonair 148 1 Dragon Dragonite
-Dragonite 149 1 Dragon/Flying None
-Mewtwo 150 1 Psychic None
-Mew 151 1 Psychic None
+Bulbasaur; 001; 1; Grass/Poison; Ivysaur;
+Ivysaur; 002; 1; Grass/Poison; Venusaur;
+Venusaur; 003; 1; Grass/Poison; None;
+Charmander; 004; 1; Fire; Charmeleon;
+Charmeleon; 005; 1; Fire; Charizard;
+Charizard; 006; 1; Fire/Flying; None;
+Squirtle; 007; 1; Water; Wartortle;
+Wartortle; 008; 1; Water; Blastoise;
+Blastoise; 009; 1; Water; None;
+Caterpie; 010; 1; Bug; Metapod;
+Metapod; 011; 1; Bug; Butterfree;
+Butterfree; 012; 1; Bug/Flying; None;
+Weedle; 013; 1; Bug/Poison; Kakuna;
+Kakuna; 014; 1; Bug/Poison; Beedrill;
+Beedrill; 015; 1; Bug/Poison; None;
+Pidgey; 016; 1; Normal/Flying; Pidgeotto;
+Pidgeotto; 017; 1; Normal/Flying; Pidgeot;
+Pidgeot; 018; 1; Normal/Flying; None;
+Rattata; 019; 1; Normal; Raticate;
+Raticate; 020; 1; Normal; None;
+Spearow; 021; 1; Normal/Flying; Fearow;
+Fearow; 022; 1; Normal/Flying; None;
+Ekans; 023; 1; Poison; Arbok;
+Arbok; 024; 1; Poison; None;
+Pikachu; 025; 1; Electric; Raichu;
+Raichu; 026; 1; Electric; None;
+Sandshrew; 027; 1; Ground; Sandslash;
+Sandslash; 028; 1; Ground; None;
+Nidoran♀️; 029; 1; Poison; Nidorina;
+Nidorina; 030; 1; Poison; Nidoqueen;
+Nidoqueen; 031; 1; Poison/Ground; None;
+Nidoran♂️; 032; 1; Poison; Nidorino;
+Nidorino; 033; 1; Poison; Nidoking;
+Nidoking; 034; 1; Poison/Ground; None;
+Clefairy; 035; 1; Fairy; Clefable;
+Clefable; 036; 1; Fairy; None;
+Vulpix; 037; 1; Fire; Ninetales;
+Ninetales; 038; 1; Fire; None;
+Jigglypuff; 039; 1; Normal/Fairy; Wigglytuff;
+Wigglytuff; 040; 1; Normal/Fairy; None;
+Zubat; 041; 1; Poison/Flying; Golbat;
+Golbat; 042; 1; Poison/Flying; Crobat;
+Oddish; 043; 1; Grass/Poison; Gloom;
+Gloom; 044; 1; Grass/Poison; Vileplume;
+Vileplume; 045; 1; Grass/Poison; None;
+Paras; 046; 1; Bug/Grass; Parasect;
+Parasect; 047; 1; Bug/Grass; None;
+Venonat; 048; 1; Bug/Poison; Venomoth;
+Venomoth; 049; 1; Bug/Poison; None;
+Diglett; 050; 1; Ground; Dugtrio;
+Dugtrio; 051; 1; Ground; None;
+Meowth; 052; 1; Normal; Persian;
+Persian; 053; 1; Normal; None;
+Psyduck; 054; 1; Water; Golduck;
+Golduck; 055; 1; Water; None;
+Mankey; 056; 1; Fighting; Primeape;
+Primeape; 057; 1; Fighting; None;
+Growlithe; 058; 1; Fire; Arcanine;
+Arcanine; 059; 1; Fire; None;
+Poliwag; 060; 1; Water; Poliwhirl;
+Poliwhirl; 061; 1; Water; Poliwrath;
+Poliwrath; 062; 1; Water/Fighting; None;
+Abra; 063; 1; Psychic; Kadabra;
+Kadabra; 064; 1; Psychic; Alakazam;
+Alakazam; 065; 1; Psychic; None;
+Machop; 066; 1; Fighting; Machoke;
+Machoke; 067; 1; Fighting; Machamp;
+Machamp; 068; 1; Fighting; None;
+Bellsprout; 069; 1; Grass/Poison; Weepinbell;
+Weepinbell; 070; 1; Grass/Poison; Victreebel;
+Victreebel; 071; 1; Grass/Poison; None;
+Tentacool; 072; 1; Water/Poison; Tentacruel;
+Tentacruel; 073; 1; Water/Poison; None;
+Geodude; 074; 1; Rock/Ground; Graveler;
+Graveler; 075; 1; Rock/Ground; Golem;
+Golem; 076; 1; Rock/Ground; None;
+Ponyta; 077; 1; Fire; Rapidash;
+Rapidash; 078; 1; Fire; None;
+Slowpoke; 079; 1; Water/Psychic; Slowbro;
+Slowbro; 080; 1; Water/Psychic; None;
+Magnemite; 081; 1; Electric/Steel; Magneton;
+Magneton; 082; 1; Electric/Steel; None;
+Farfetch'd; 083; 1; Normal/Flying; None;
+Doduo; 084; 1; Normal/Flying; Dodrio;
+Dodrio; 085; 1; Normal/Flying; None;
+Seel; 086; 1; Water; Dewgong;
+Dewgong; 087; 1; Water/Ice; None;
+Grimer; 088; 1; Poison; Muk;
+Muk; 089; 1; Poison; None;
+Shellder; 090; 1; Water; Cloyster;
+Cloyster; 091; 1; Water/Ice; None;
+Gastly; 092; 1; Ghost/Poison; Haunter;
+Haunter; 093; 1; Ghost/Poison; Gengar;
+Gengar; 094; 1; Ghost/Poison; None;
+Onix; 095; 1; Rock/Ground; None;
+Drowzee; 096; 1; Psychic; Hypno;
+Hypno; 097; 1; Psychic; None;
+Krabby; 098; 1; Water; Kingler;
+Kingler; 099; 1; Water; None;
+Voltorb; 100; 1; Electric; Electrode;
+Electrode; 101; 1; Electric; None;
+Exeggcute; 102; 1; Grass/Psychic; Exeggutor;
+Exeggutor; 103; 1; Grass/Psychic; None;
+Cubone; 104; 1; Ground; Marowak;
+Marowak; 105; 1; Ground; None;
+Hitmonlee; 106; 1; Fighting; None;
+Hitmonchan; 107; 1; Fighting; None;
+Lickitung; 108; 1; Normal; None;
+Koffing; 109; 1; Poison; Weezing;
+Weezing; 110; 1; Poison; None;
+Rhyhorn; 111; 1; Ground/Rock; Rhydon;
+Rhydon; 112; 1; Ground/Rock; None;
+Chansey; 113; 1; Normal; None;
+Tangela; 114; 1; Grass; None;
+Kangaskhan; 115; 1; Normal; None;
+Horsea; 116; 1; Water; Seadra;
+Seadra; 117; 1; Water; None;
+Goldeen; 118; 1; Water; Seaking;
+Seaking; 119; 1; Water; None;
+Staryu; 120; 1; Water; Starmie;
+Starmie; 121; 1; Water/Psychic; None;
+Mr. Mime; 122; 1; Psychic/Fairy; None;
+Scyther; 123; 1; Bug/Flying; None;
+Jynx; 124; 1; Ice/Psychic; None;
+Electabuzz; 125; 1; Electric; None;
+Magmar; 126; 1; Fire; None;
+Pinsir; 127; 1; Bug; None;
+Tauros; 128; 1; Normal; None;
+Magikarp; 129; 1; Water; Gyarados;
+Gyarados; 130; 1; Water/Flying; None;
+Lapras; 131; 1; Water/Ice; None;
+Ditto; 132; 1; Normal; None;
+Eevee; 133; 1; Normal; Vaporeon/Jolteon/Flareon;
+Vaporeon; 134; 1; Water; None;
+Jolteon; 135; 1; Electric; None;
+Flareon; 136; 1; Fire; None;
+Porygon; 137; 1; Normal; None;
+Omanyte; 138; 1; Rock/Water; Omastar;
+Omastar; 139; 1; Rock/Water; None;
+Kabuto; 140; 1; Rock/Water; Kabutops;
+Kabutops; 141; 1; Rock/Water; None;
+Aerodactyl; 142; 1; Rock/Flying; None;
+Snorlax; 143; 1; Normal; None;
+Articuno; 144; 1; Ice/Flying; None;
+Zapdos; 145; 1; Electric/Flying; None;
+Moltres; 146; 1; Fire/Flying; None;
+Dratini; 147; 1; Dragon; Dragonair;
+Dragonair; 148; 1; Dragon; Dragonite;
+Dragonite; 149; 1; Dragon/Flying; None;
+Mewtwo; 150; 1; Psychic; None;
+Mew; 151; 1; Psychic; None;
