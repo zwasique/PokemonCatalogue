@@ -18,6 +18,8 @@ lib/
 
 # Ignore temporary files
 Testing/Temporary/LastTest.log
+menu-idea.txt
+fileformat.txt
 
 # Ignore system and hidden files
 .DS_Store
