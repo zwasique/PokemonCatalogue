@@ -20,6 +20,7 @@ lib/
 Testing/Temporary/LastTest.log
 menu-idea.txt
 fileformat.txt
+instructions.txt
 
 # Ignore system and hidden files
 .DS_Store
