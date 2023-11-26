@@ -1,0 +1,11 @@
+Would you mind listing the first fifteen pokemon in generation in the 
+following format:
+
+name; number; generation; type; evolvedForm;
+
+
+If there is no evolved form, write None please.
+Here are some examples:
+
+Lapras; 131; 1; Water/Ice; None;
+Slowpoke; 079; 1; Water/Psychic; Slowbro;
