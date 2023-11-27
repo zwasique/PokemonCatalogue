@@ -1,6 +1,6 @@
 char direction = '?';
 
-std::cout << "Which pokemon files do you wish to include? Enter a number (1-9), F to finish entering files, or E to exit the program:" << std::endl;
+std::cout << "Which Pokémon files do you wish to include? Enter a number (1-9), F to finish entering files, or E to exit the program:" << std::endl;
 
 std::cin << direction;
 
@@ -19,7 +19,7 @@ while ((direction >= '1' && direction <= '9') || direction  == 'F' || direction 
 
 }
 
-for int (file : chosenFiles) {
+for  (std::string file : chosenFiles) {
 	catalogue.read(file); read the chosen files into the catalogue
 }
 
