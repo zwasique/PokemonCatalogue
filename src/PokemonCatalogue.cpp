@@ -51,7 +51,7 @@ void readFiles(std::set<std::string> filesToRead, char instruction) {
 
 
 void readFiles2(std::set<std::string> filesToRead, char instruction){
-    instruction = 'P';
+    //before function: std::cout << "Which Pokemon generations do you wish to include?"
     while (instruction != 'F'){
 
         if (instruction == 'E'){
