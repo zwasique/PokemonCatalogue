@@ -47,10 +47,12 @@ void readFiles(std::set<std::string> filesToRead, char instruction) {
             std::cin >> instruction;
         }
     }
+
+    return;
 }
 
 
-void readFiles2(std::set<std::string> filesToRead, char instruction){
+void readFiles2(std::set<std::string> filesToRead, char instruction){ //instruction has already been initialised to an invalid value
     //before function: std::cout << "Which Pokemon generations do you wish to include?"
     while (instruction != 'F'){
 
@@ -64,6 +66,7 @@ void readFiles2(std::set<std::string> filesToRead, char instruction){
         std::cout << "Enter a number (1-9), F to finish entering files, or E to exit the program." << std::endl;
         std::cin >> instruction;
     }
+    return;
 }
 
 
@@ -71,6 +74,8 @@ void readFiles2(std::set<std::string> filesToRead, char instruction){
 void pokemonSortMenu(){
 
     std::cout << "temp" << std::endl;
+
+    return;
 
 
 }
