@@ -16,7 +16,7 @@ int main () {
     Catalogue pokemonCatalogue;
 
     chooseFiles(chosenFiles, direction);
-    chooseFiles2(chosenFiles, direction);
+
     pokemonSortMenu(pokemonCatalogue);
 
 
@@ -29,7 +29,7 @@ int main () {
 
 //Function definitions
 
-void readFiles(std::set<std::string> filesToRead, char instruction) {
+void chooseFiles(std::set<std::string> filesToRead, char instruction) {
 
     std::cout << "Which Pokemon generations do you wish to include?"
                  "Enter a number (1-9), F to finish entering, or E to exit the program: " << std::endl;
@@ -47,12 +47,11 @@ void readFiles(std::set<std::string> filesToRead, char instruction) {
             std::cin >> instruction;
         }
     }
-
     return;
 }
 
 
-void readFiles2(std::set<std::string> filesToRead, char instruction){ //instruction has already been initialised to an invalid value
+void chooseFiles2(std::set<std::string> filesToRead, char instruction){ //instruction has already been initialised to an invalid value
     //before function: std::cout << "Which Pokemon generations do you wish to include?"
     while (instruction != 'F'){
 
@@ -65,6 +64,8 @@ void readFiles2(std::set<std::string> filesToRead, char instruction){ //instruct
 
         std::cout << "Enter a number (1-9), F to finish entering files, or E to exit the program." << std::endl;
         std::cin >> instruction;
+
+        //maybe: add remove files option
     }
     return;
 }
