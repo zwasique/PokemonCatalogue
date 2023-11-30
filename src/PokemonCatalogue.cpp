@@ -71,10 +71,7 @@ void chooseFiles2(std::set<std::string> filesToRead, char instruction){ //instru
 }
 
 
-
 void pokemonSortMenu(){
-
-    std::cout << "temp" << std::endl;
 
     return;
 
