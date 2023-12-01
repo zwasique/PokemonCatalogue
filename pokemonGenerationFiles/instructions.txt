@@ -1,3 +1,5 @@
+//Chat GPT prompt for generating Pokemon files: add generation number 
+after "generation"
 Would you mind listing the first fifteen pokemon in generation in the 
 following format:
 
