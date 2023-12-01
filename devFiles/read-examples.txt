@@ -1,0 +1,148 @@
+courtesy of Thomas Kennedy assignments from CS330
+Assg4
+void Armour::read(std::istream& ins)
+{
+    // attempt2
+    //declare temp variables
+    std::string _name, _material;
+    double _durability, _defense;
+    std::string _modifier;
+    int m_level;
+    std::string _element;
+
+    ///read from input file
+    ins >> _name >> _material >> _durability >> _defense >> _modifier >> m_level >> _element;
+
+    //assign variables to armour attributes
+    Item::setName(_name);
+    setMaterial(_material);
+    setDurability(_durability);
+    setDefense(_defense);
+    setModifier(_modifier);
+    setModifierLevel(m_level);
+    setElement(_element);
+}
+
+
+void Consumable::read(std::istream& ins)
+// Add the definition for this function
+{
+    //attempt1
+    std::string _name, _effect;
+    int _uses;
+    ins >> _name >> _effect >> _uses;
+
+    setName(_name);
+    setEffect(_effect);
+    setNumberOfUses(_uses);
+
+}
+
+std::istream& operator>>(std::istream& ins, Item*& rd)
+{
+    std::string type;  // first "word" on line
+
+    // Read the item type and retrieve a template Item from the ItemFactory
+    ins >> type;
+    rd = ItemFactory::createItem(type);
+
+    if (rd == nullptr) {
+        discardRestOfLine(ins);
+    }
+    else {
+        rd->read(ins);
+    }
+
+    return ins;
+}
+
+
+
+
+/////
+Assg3
+
+void Item::read(std::istream& ins)
+{
+    // Use temp vars in case something goes wrong...
+    int i = 0;
+    std::string n("Air");
+
+    ins >> i;
+    getline(ins, n);
+    trim(n);
+
+    this->setID(i);
+    this->setName(n);
+}
+
+         * Read in an update Item id and name
+         */
+        void read(std::istream& ins);
+
+/**
+ * Read in one Item by invoking read.
+ */
+inline
+std::istream& operator>>(std::istream& ins, Item& toRead)
+{
+    toRead.read(ins);
+
+    return ins;
+}
+
+
+
+///////
+Assg2
+std::istream& operator>>(std::istream& ins, Item& toRead)
+{
+    int    i;
+    string n;
+
+    ins >> i;
+
+    getline(ins, n);
+    trim(n);
+
+    toRead.setID(i);
+    toRead.setName(n);
+
+    return ins;
+}
+
+///////////
+Assg5
+void Armour::read(std::istream& ins)
+{
+    std::string _name;
+    ins >> _name;
+    setName(_name);
+
+    ins >> this->material;
+    ins >> this->durability;
+    ins >> this->defense;
+    ins >> this->modifier;
+    ins >> this->modifierLevel;
+    ins >> this->element;
+    //attempt3
+}
+std::istream& operator>>(std::istream& ins, Item*& rd)
+{
+    std::string type;  // first "word" on line
+
+    // Read the item type and retrieve a template Item from the 
+ItemFactory
+    ins >> type;
+    rd = ItemFactory::createItem(type);
+
+    if (rd == nullptr) {
+        discardRestOfLine(ins);
+    }
+    else {
+        rd->read(ins);
+    }
+
+    return ins;
+}
+/////////////////////////////////
