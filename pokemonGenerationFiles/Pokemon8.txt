@@ -74,3 +74,10 @@ Regidrago; 895; 8; Dragon; None;
 Glastrier; 896; 8; Ice; Spectrier;
 Spectrier; 897; 8; Ghost; Glastrier;
 Calyrex; 898; 8; Psychic/Grass; Ice Rider with Glastrier, Shadow Rider with Spectrier
+Wyrdeer; 899; 8; Normal/Psychic; None;
+Kleavor; 900; 8; Bug/Rock; None;
+Ursaluna; 901; 8; Ground/Normal; None;
+Basculegion; 902; 8; Water/Ghost; None;
+Sneasler; 903; 8; Fighting/Poison; None;
+Overqwil; 904; 8; Dark/Poison; None;
+Enamorus; 905; 8; Fairy/Flying; None;
