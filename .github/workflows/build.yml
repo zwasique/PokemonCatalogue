@@ -12,16 +12,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Set up CMake
-      uses: cmake/setup-cmake@v2
+      uses: jwlawson/actions-setup-cmake@v1  # Use latest version
+      with:
+        cmake-version: 'latest'  # Use the latest version
 
     - name: Configure and build
       run: |
