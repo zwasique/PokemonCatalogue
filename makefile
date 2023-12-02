@@ -129,77 +129,77 @@ PokemonCatalogue/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/build
 .PHONY : PokemonCatalogue/fast
 
-Catalogue.o: Catalogue.cpp.o
-.PHONY : Catalogue.o
+src/Catalogue.o: src/Catalogue.cpp.o
+.PHONY : src/Catalogue.o
 
 # target to build an object file
-Catalogue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Catalogue.cpp.o
-.PHONY : Catalogue.cpp.o
+src/Catalogue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/Catalogue.cpp.o
+.PHONY : src/Catalogue.cpp.o
 
-Catalogue.i: Catalogue.cpp.i
-.PHONY : Catalogue.i
+src/Catalogue.i: src/Catalogue.cpp.i
+.PHONY : src/Catalogue.i
 
 # target to preprocess a source file
-Catalogue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Catalogue.cpp.i
-.PHONY : Catalogue.cpp.i
+src/Catalogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/Catalogue.cpp.i
+.PHONY : src/Catalogue.cpp.i
 
-Catalogue.s: Catalogue.cpp.s
-.PHONY : Catalogue.s
+src/Catalogue.s: src/Catalogue.cpp.s
+.PHONY : src/Catalogue.s
 
 # target to generate assembly for a file
-Catalogue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Catalogue.cpp.s
-.PHONY : Catalogue.cpp.s
+src/Catalogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/Catalogue.cpp.s
+.PHONY : src/Catalogue.cpp.s
 
-Pokemon.o: Pokemon.cpp.o
-.PHONY : Pokemon.o
+src/Pokemon.o: src/Pokemon.cpp.o
+.PHONY : src/Pokemon.o
 
 # target to build an object file
-Pokemon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Pokemon.cpp.o
-.PHONY : Pokemon.cpp.o
+src/Pokemon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/Pokemon.cpp.o
+.PHONY : src/Pokemon.cpp.o
 
-Pokemon.i: Pokemon.cpp.i
-.PHONY : Pokemon.i
+src/Pokemon.i: src/Pokemon.cpp.i
+.PHONY : src/Pokemon.i
 
 # target to preprocess a source file
-Pokemon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Pokemon.cpp.i
-.PHONY : Pokemon.cpp.i
+src/Pokemon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/Pokemon.cpp.i
+.PHONY : src/Pokemon.cpp.i
 
-Pokemon.s: Pokemon.cpp.s
-.PHONY : Pokemon.s
+src/Pokemon.s: src/Pokemon.cpp.s
+.PHONY : src/Pokemon.s
 
 # target to generate assembly for a file
-Pokemon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/Pokemon.cpp.s
-.PHONY : Pokemon.cpp.s
+src/Pokemon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/Pokemon.cpp.s
+.PHONY : src/Pokemon.cpp.s
 
-PokemonCatalogue.o: PokemonCatalogue.cpp.o
-.PHONY : PokemonCatalogue.o
+src/PokemonCatalogue.o: src/PokemonCatalogue.cpp.o
+.PHONY : src/PokemonCatalogue.o
 
 # target to build an object file
-PokemonCatalogue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/PokemonCatalogue.cpp.o
-.PHONY : PokemonCatalogue.cpp.o
+src/PokemonCatalogue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/PokemonCatalogue.cpp.o
+.PHONY : src/PokemonCatalogue.cpp.o
 
-PokemonCatalogue.i: PokemonCatalogue.cpp.i
-.PHONY : PokemonCatalogue.i
+src/PokemonCatalogue.i: src/PokemonCatalogue.cpp.i
+.PHONY : src/PokemonCatalogue.i
 
 # target to preprocess a source file
-PokemonCatalogue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/PokemonCatalogue.cpp.i
-.PHONY : PokemonCatalogue.cpp.i
+src/PokemonCatalogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/PokemonCatalogue.cpp.i
+.PHONY : src/PokemonCatalogue.cpp.i
 
-PokemonCatalogue.s: PokemonCatalogue.cpp.s
-.PHONY : PokemonCatalogue.s
+src/PokemonCatalogue.s: src/PokemonCatalogue.cpp.s
+.PHONY : src/PokemonCatalogue.s
 
 # target to generate assembly for a file
-PokemonCatalogue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/PokemonCatalogue.cpp.s
-.PHONY : PokemonCatalogue.cpp.s
+src/PokemonCatalogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/src/PokemonCatalogue.cpp.s
+.PHONY : src/PokemonCatalogue.cpp.s
 
 # Help Target
 help:
@@ -210,15 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PokemonCatalogue"
-	@echo "... Catalogue.o"
-	@echo "... Catalogue.i"
-	@echo "... Catalogue.s"
-	@echo "... Pokemon.o"
-	@echo "... Pokemon.i"
-	@echo "... Pokemon.s"
-	@echo "... PokemonCatalogue.o"
-	@echo "... PokemonCatalogue.i"
-	@echo "... PokemonCatalogue.s"
+	@echo "... src/Catalogue.o"
+	@echo "... src/Catalogue.i"
+	@echo "... src/Catalogue.s"
+	@echo "... src/Pokemon.o"
+	@echo "... src/Pokemon.i"
+	@echo "... src/Pokemon.s"
+	@echo "... src/PokemonCatalogue.o"
+	@echo "... src/PokemonCatalogue.i"
+	@echo "... src/PokemonCatalogue.s"
 .PHONY : help
 
 
