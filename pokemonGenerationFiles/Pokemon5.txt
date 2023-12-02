@@ -1,3 +1,4 @@
+Victini; 494; 5; Psychic/Fire; none;
 Snivy; 495; 5; Grass; Servine;
 Servine; 496; 5; Grass; Serperior;
 Tepig; 498; 5; Fire; Pignite;
