@@ -1,6 +1,8 @@
 #include "../include/Pokemon.h"
 
 #include <utility>
+#include <iomanip>
+
 
 Pokemon::Pokemon()
     :Pokemon("None", 0, 0, "None", "None")
@@ -25,19 +27,12 @@ bool Pokemon::operator==(const Pokemon& otherPokemon) const
         && (this->gen == otherPokemon.gen);
 }
 
-std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
-{
-    monster.display(outs);
-    return outs;
 
-}
 void Pokemon::display(std::ostream &outs) const
 {
-    outs << "Name: " << getName() << "\n"
-    << "Number: " << getNumber() << "\n"
-    << "Type: " << getType() << "\n"
-    << "Gen: " << getGen() << "\n"
-    << "Tag: " << getSpecialTag() << "\n";
+    outs << "Name: " << std::setw(15) << getName() << "Number: " << std::setw(4) << getNumber()
+         << "Type: " << std::setw(15) << getType() << "Gen: " << std::setw(4) << getGen()
+         << "Tag: " << getSpecialTag() << "\n";
 
 }
 

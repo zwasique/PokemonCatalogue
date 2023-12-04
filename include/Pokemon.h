@@ -22,7 +22,7 @@ private:
 
 
 public:
-    // Default to false for all bools, "Non"" type, number 0, generation 0, "None" special tag
+    // Default to false for all booleans, "Non"" type, number 0, generation 0, "None" special tag
     Pokemon();
 
 
@@ -49,7 +49,11 @@ public:
 
 //};
 
-std::ostream& operator<<(std::ostream &outs, const Pokemon &monster);
+std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
+{
+    monster.display(outs);
+    return outs;
+}
 
 
 
