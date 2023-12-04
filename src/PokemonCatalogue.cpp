@@ -41,13 +41,12 @@ void chooseFiles(std::set<std::string> filesToRead, char instruction){ //instruc
 
         //maybe: add remove files option
     }
-    return;
+
 }
 
 
 void pokemonSortMenu(){
 
-    return;
 
 
 }
