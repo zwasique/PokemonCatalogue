@@ -22,7 +22,7 @@ private:
 
 
 public:
-    // Default to false for all booleans, "None"" type, number 0, generation 0, "None" special tag
+    // Default to false for all booleans, "None" type, number 0, generation 0
     Pokemon();
 
 
@@ -43,11 +43,6 @@ public:
 
 };
 
-//class Legendary: public Pokemon {
-
-  //  int stat; /* here for now*/
-
-//};
 
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
 {
