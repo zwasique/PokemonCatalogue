@@ -17,7 +17,7 @@ private:
 
     //std::string specialTag;
 
-    std::vector<Pokemon> evolutions;
+    //std::vector<Pokemon> evolutions;
 
 
 
