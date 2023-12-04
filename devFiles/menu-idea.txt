@@ -1,29 +1,3 @@
-char direction = '?';
-
-std::cout << "Which Pokémon files do you wish to include? Enter a number (1-9), F to finish entering files, or E to exit the program:" << std::endl;
-
-std::cin << direction;
-
-while ((direction >= '1' && direction <= '9') || direction  == 'F' || direction == 'E'){
-	
-	while (direction >= '1' && direction <= '9'){
-        	String fileName = "Pokemon" + gen + ".txt";
-        	vector<int> chosenFiles.push_back(fileName);
-
-		std::cout << "Enter a number (1-9), F to finish entering files, or E to exit the program." << std::endl;
-		std::cin >> direction;
-	}
-	if (direction == 'E'){
-		exit(0);
-	}
-
-}
-
-for  (std::string file : chosenFiles) {
-	catalogue.read(file); read the chosen files into the catalogue
-}
-
-
 std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit" << std::endl;
 std::cin >> direction;
 
