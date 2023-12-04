@@ -15,18 +15,18 @@ private:
     int number;
     std::string type;
 
-    std::string specialTag;
+    //std::string specialTag;
 
     std::vector<Pokemon> evolutions;
 
 
 
 public:
-    // Default to false for all booleans, "Non"" type, number 0, generation 0, "None" special tag
+    // Default to false for all booleans, "None"" type, number 0, generation 0, "None" special tag
     Pokemon();
 
 
-    Pokemon(const std::string& nameIn, int numIn, int genIn, std::string typeIn, std::string specialTagIn);
+    Pokemon(const std::string& nameIn, int numIn, int genIn, std::string typeIn);
 
     ~Pokemon();
 
@@ -34,7 +34,7 @@ public:
     int getNumber() const;
     int getGen() const;
     std::string getType() const;
-    std::string getSpecialTag() const;
+    //std::string getSpecialTag() const;
 
 
     void display(std::ostream &outs) const;
