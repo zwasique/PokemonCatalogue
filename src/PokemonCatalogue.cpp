@@ -5,7 +5,7 @@
 #include "../include/Catalogue.h"
 
 //Function declarations
-void chooseFiles(std::set<std::string> filesToRead, std::string instruction);
+void chooseFiles(std::set<std::string> filesToRead, std::string instruction); //TODO: maybe add a remove files option
 void fillAll(std::set<std::string> fileToRead);
 void pokemonSortMenu(Catalogue catalogue);
 
@@ -22,14 +22,11 @@ int main () {
 
     return 0;
 
-
 }
-
 
 
 void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //instruction has already been initialised to an invalid value
     while (instruction != "F"){
-
 
         if (instruction == "A"){
             fillAll(filesToRead);
@@ -43,9 +40,7 @@ void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //
         std::cout << "Enter a number (1-9), F to finish entering files, or E to exit the program." << std::endl;
         std::cin >> instruction;
 
-        //maybe: add remove files option
     }
-
 }
 
 void fillAll(std::set<std::string> fileToRead){
