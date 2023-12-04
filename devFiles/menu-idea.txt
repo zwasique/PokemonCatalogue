@@ -12,5 +12,5 @@ while (direction == 'G' || direction == 'T' || direction == 'A' || direction == 
 
         std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit" << std::endl;
 	
-	std::cin >> direction;
+    	std::cin >> direction;
 }
