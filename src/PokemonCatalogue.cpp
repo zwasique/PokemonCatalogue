@@ -5,12 +5,12 @@
 #include "../include/Catalogue.h"
 
 //Function declarations
-void chooseFiles(std::set<std::string> filesToRead, char instruction);
+void chooseFiles(std::set<std::string> filesToRead, std::string instruction);
 void pokemonSortMenu(Catalogue catalogue);
 
 int main () {
 
-    char direction = '?';
+    std::string direction = "?";
     std::set<std::string> chosenFiles;
     Catalogue pokemonCatalogue;
 
@@ -26,13 +26,14 @@ int main () {
 
 
 
-void chooseFiles(std::set<std::string> filesToRead, char instruction){ //instruction has already been initialised to an invalid value
-    while (instruction != 'F'){
+void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //instruction has already been initialised to an invalid value
+    while (instruction != "F"){
 
-        if (instruction == 'E'){
+        if (instruction == "E"){
             exit(0);
-        } else if (instruction >= '1' && instruction <= '9') {
-            std::string fileName = "Pokemon" + std::string(reinterpret_cast<const char *>(instruction)) + ".txt";
+
+        } else if (instruction >= "1" && instruction <= "9") {
+            std::string fileName = "Pokemon" + instruction + ".txt";
             filesToRead.insert(fileName);
         }
 
