@@ -51,7 +51,7 @@ void fillAll(std::set<std::string> fileToRead){
 
 }
 
-void pokemonSortMenu(){
+void pokemonSortMenu(Catalogue pCatalogue){
 
 
 
