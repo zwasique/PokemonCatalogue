@@ -6,6 +6,14 @@ build/*
 build.ninja
 cmake-build-debug/
 CMakeCache.txt
+CMakeLists.txt.user
+CMakeFiles
+CMakeScripts
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
 
 # Ignore IDE-specific files
 .vscode/
@@ -17,8 +25,8 @@ CMakeCache.txt
 lib/
 
 # Ignore temporary files
-Testing/Temporary/LastTest.log
-
+Testing
+Makefile
 
 # Ignore system and hidden files
 .DS_Store
