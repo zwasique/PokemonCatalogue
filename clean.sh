@@ -7,7 +7,9 @@ clean_unix() {
 }
 
 clean_windows() {
-	if exist "build" rmdir /s /q build
+	if [ -d "build" ]; then
+		 rmdir /s /q build
+	fi
 }
 
 case "$(uname -s)" in
@@ -21,5 +23,3 @@ case "$(uname -s)" in
 		echo "Unsupported operating system"
 		exit 1
 		;;
-
-kfjdlfja'fjkdlfjla;skjfl;
