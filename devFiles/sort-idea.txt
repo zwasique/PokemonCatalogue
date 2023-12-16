@@ -8,9 +8,13 @@ std::cin >> direction;
 while (direction == 'N' || direction == 'T' || direction == 'A' || direction == 'E') {
 
 		if (direction == 'N') list pokemon by in numerical order
+		    catalogue.sortNum();
 		else if (direction == 'A') sort Pokemon alphabetically by name
-		else if (direction == 'T') see all Pokemon of a type, or organise by type
-		else if (direction == 'E') exit(0);
+		    catalogue.sortAlpha();
+		else if (direction == 'T') //see all Pokemon of a type, or organise by type
+		    catalogue.sortType();
+		else if (direction == 'E')
+		    exit(0);
 
         std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit" << std::endl;
 	

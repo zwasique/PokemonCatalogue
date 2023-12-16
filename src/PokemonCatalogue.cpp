@@ -5,9 +5,9 @@
 #include "../include/Catalogue.h"
 
 //Function declarations
-void chooseFiles(std::set<std::string> filesToRead, std::string instruction); //TODO: maybe add a remove files option
+std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string instruction); //TODO: maybe add a remove files option
 void fillAll(std::set<std::string> fileToRead);
-void pokemonSortMenu(Catalogue catalogue);
+void pokemonSortMenu(Catalogue catalogue, std::string instruction);
 
 int main () {
 
@@ -16,20 +16,22 @@ int main () {
     Catalogue pokemonCatalogue;
 
     std::cout << "Which Pokemon generations do you wish to include?" << std::endl;
-    chooseFiles(chosenFiles, direction);
 
-    pokemonSortMenu(pokemonCatalogue);
+    pokemonCatalogue.readFiles(chooseFiles(chosenFiles, direction));
+
+    pokemonSortMenu(pokemonCatalogue, direction);
 
     return 0;
 
 }
 
 
-void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //instruction has already been initialised to an invalid value
+std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //instruction has already been initialised to an invalid value
     while (instruction != "F"){
 
         if (instruction == "A"){
             fillAll(filesToRead);
+            break;
         } else if (instruction >= "1" && instruction <= "9") {
             std::string fileName = "Pokemon" + instruction + ".txt";
             filesToRead.insert(fileName);
@@ -41,6 +43,7 @@ void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //
         std::cin >> instruction;
 
     }
+    return filesToRead;
 }
 
 void fillAll(std::set<std::string> fileToRead){
@@ -49,10 +52,28 @@ void fillAll(std::set<std::string> fileToRead){
         fileToRead.insert(fileName);
     }
 
-}
-
-void pokemonSortMenu(Catalogue pCatalogue){
-
-
 
 }
+
+void pokemonSortMenu(Catalogue catalogue, std::string instruction){
+    
+    while (instruction != "E") {
+        while (instruction == "N" || instruction == "T" || instruction == "A" || instruction == "E'") {
+
+            if (instruction == "N") //list Pokémon by numerical order
+                catalogue.sortNum();
+            else if (instruction == "A") //sort Pokemon alphabetically by name
+                catalogue.sortAlpha();
+            else if (instruction == "T") //see all Pokemon of a type, or organise by type
+                catalogue.sortType();
+            else if (instruction == "E")
+                exit(0);
+
+            std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit"
+                      << std::endl;
+            std::cin >> instruction;
+        }
+
+         }
+
+    }

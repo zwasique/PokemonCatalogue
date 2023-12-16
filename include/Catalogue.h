@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <list>
+#include <set>
 
 #include "Pokemon.h"
 
@@ -24,7 +25,7 @@ private:
     PokemonCatalogue allPokemon;
 
 public:
-    Catalogue();
+    Catalogue() = default;
 
 
     /**
@@ -33,7 +34,7 @@ public:
      * the original catalogue is unaffected by the sort
      * @param src
      */
-    Catalogue(const Catalogue& src);
+    Catalogue(const Catalogue& src) = default;
 
     iterator begin();
     iterator end();
@@ -41,9 +42,15 @@ public:
     const_iterator begin() const;
     const_iterator end() const;
 
-    void readFiles(std::string files);
+    void readFiles(std::set<std::string> chosenFiles);
+
+    void display(std::ostream& outs) const;
+
 
 
 };
+
+
+    std::ostream& operator<<(std::ostream outs, const Catalogue& catalogue);
 
 #endif
