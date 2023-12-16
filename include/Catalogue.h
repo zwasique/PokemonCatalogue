@@ -46,6 +46,10 @@ public:
 
     void display(std::ostream& outs) const;
 
+    void sortNum();
+    void sortAlpha();
+    void sortType();
+
 
 
 };

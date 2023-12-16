@@ -26,6 +26,28 @@ void Catalogue::display(std::ostream& outs) const {
 
 }
 
+void Catalogue::sortAlpha()
+{
+    //use copy constructor
+    //sort the copied version
+    //call display function
+}
+
+void Catalogue::sortNum()
+{
+    //use copy constructor
+    //sort copied version
+    //call display function
+
+}
+
+void Catalogue::sortType()
+{
+    //use copy constructor
+    //sort copied version
+    //call display function
+}
+
 std::ostream& operator<<(std::ostream outs, const Catalogue& catalogue){
     catalogue.display(outs);
     return outs;
