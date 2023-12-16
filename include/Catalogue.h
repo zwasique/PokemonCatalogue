@@ -46,15 +46,17 @@ public:
 
     void display(std::ostream& outs) const;
 
-    void sortNum();
-    void sortAlpha();
-    void sortType();
-
+    void sortAlpha() const;
+    void sortType() const;
 
 
 };
 
-
-    std::ostream& operator<<(std::ostream outs, const Catalogue& catalogue);
+inline
+std::ostream& operator<<(std::ostream outs, const Catalogue& catalogue)
+{
+    catalogue.display(outs);
+    return outs;
+}
 
 #endif

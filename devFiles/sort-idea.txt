@@ -1,30 +1,8 @@
 str.find("world") != std::string::npos;
 
 
-std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit" << std::endl;
-std::cin >> direction;
-
-//menu
-while (direction == 'N' || direction == 'T' || direction == 'A' || direction == 'E') {
-
-		if (direction == 'N') list pokemon by in numerical order
-		    catalogue.sortNum();
-		else if (direction == 'A') sort Pokemon alphabetically by name
-		    catalogue.sortAlpha();
-		else if (direction == 'T') //see all Pokemon of a type, or organise by type
-		    catalogue.sortType();
-		else if (direction == 'E')
-		    exit(0);
-
-        std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit" << std::endl;
-	
-    	std::cin >> direction;
-}
 
 
-for numerical sort:
-bucket sort (separate generations)
-then insertion sort within each generation
 for alphabetical sort:
 #include
 std::sort(numbers.begin(), numbers.end(), std::greater<int>());

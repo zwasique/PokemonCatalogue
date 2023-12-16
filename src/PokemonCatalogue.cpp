@@ -1,11 +1,12 @@
 #include <iostream>
 #include <set>
 #include <string>
+#include <algorithm>
 #include "../include/Pokemon.h"
 #include "../include/Catalogue.h"
 
 //Function declarations
-std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string instruction); //TODO: maybe add a remove files option
+std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string instruction); //maybe add a remove files option
 void fillAll(std::set<std::string> fileToRead);
 void pokemonSortMenu(Catalogue catalogue, std::string instruction);
 
@@ -52,7 +53,6 @@ void fillAll(std::set<std::string> fileToRead){
         fileToRead.insert(fileName);
     }
 
-
 }
 
 void pokemonSortMenu(Catalogue catalogue, std::string instruction){
@@ -61,7 +61,7 @@ void pokemonSortMenu(Catalogue catalogue, std::string instruction){
         while (instruction == "N" || instruction == "T" || instruction == "A" || instruction == "E'") {
 
             if (instruction == "N") //list Pokémon by numerical order
-                catalogue.sortNum();
+                //std::cout << catalogue;
             else if (instruction == "A") //sort Pokemon alphabetically by name
                 catalogue.sortAlpha();
             else if (instruction == "T") //see all Pokemon of a type, or organise by type

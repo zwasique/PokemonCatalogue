@@ -43,7 +43,7 @@ public:
 
 };
 
-
+inline
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
 {
     monster.display(outs);
