@@ -2,17 +2,17 @@
 
 PokemonCatalogue
 CMakeLists.txt.user
-build/CMakeCache.txt
-build/CMakeFiles
+CMakeCache.txt
+CMakeFiles
 CMakeScripts
 Testing
-build/Makefile
-build/cmake_install.cmake
+Makefile
+cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
-
+build/*
 # Ignore IDE-specific files
 .vscode/
 .idea/
