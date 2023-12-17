@@ -1,14 +1,12 @@
 # .gitignore
 
-# Ignore build artifacts and CMake configuration
 PokemonCatalogue
-build/*
-build.ninja
-cmake-build-debug/
-CMakeCache.txt
 CMakeLists.txt.user
+CMakeCache.txt
 CMakeFiles
 CMakeScripts
+Testing
+Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
@@ -23,10 +21,6 @@ _deps
 
 # Ignore dependency directories
 lib/
-
-# Ignore temporary files
-Testing
-Makefile
 
 # Ignore system and hidden files
 .DS_Store
