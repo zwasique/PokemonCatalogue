@@ -2,6 +2,7 @@
 
 #include <utility>
 #include <iomanip>
+#include <iostream>
 
 
 Pokemon::Pokemon()

@@ -53,7 +53,7 @@ public:
 };
 
 inline
-std::ostream& operator<<(std::ostream outs, const Catalogue& catalogue)
+std::ostream& operator<<(std::ostream& outs, const Catalogue& catalogue)
 {
     catalogue.display(outs);
     return outs;
