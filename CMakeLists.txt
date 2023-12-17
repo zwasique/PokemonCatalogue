@@ -4,7 +4,7 @@ project(PokemonCatalogue)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../build)
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 
 # Collect source files
 set(SOURCES
