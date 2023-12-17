@@ -23,3 +23,4 @@ case "$(uname -s)" in
 		echo "Unsupported operating system"
 		exit 1
 		;;
+esac

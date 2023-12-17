@@ -1,0 +1,4 @@
+/Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles/PokemonCatalogue.dir
+/Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles/clean_up.dir
+/Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles/edit_cache.dir
+/Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles/rebuild_cache.dir

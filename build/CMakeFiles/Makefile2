@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/zarawasique/projects/PokemonCatalogue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zarawasique/projects/PokemonCatalogue
+CMAKE_BINARY_DIR = /Users/zarawasique/projects/PokemonCatalogue/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -72,6 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/PokemonCatalogue.dir/clean
+clean: CMakeFiles/clean_up.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,14 +82,14 @@ clean: CMakeFiles/PokemonCatalogue.dir/clean
 CMakeFiles/PokemonCatalogue.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zarawasique/projects/PokemonCatalogue/CMakeFiles --progress-num=1,2,3,4 "Built target PokemonCatalogue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles --progress-num=1,2,3,4 "Built target PokemonCatalogue"
 .PHONY : CMakeFiles/PokemonCatalogue.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PokemonCatalogue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zarawasique/projects/PokemonCatalogue/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PokemonCatalogue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zarawasique/projects/PokemonCatalogue/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles 0
 .PHONY : CMakeFiles/PokemonCatalogue.dir/rule
 
 # Convenience name for target.
@@ -99,6 +100,32 @@ PokemonCatalogue: CMakeFiles/PokemonCatalogue.dir/rule
 CMakeFiles/PokemonCatalogue.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonCatalogue.dir/build.make CMakeFiles/PokemonCatalogue.dir/clean
 .PHONY : CMakeFiles/PokemonCatalogue.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/clean_up.dir
+
+# All Build rule for target.
+CMakeFiles/clean_up.dir/all: CMakeFiles/PokemonCatalogue.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_up.dir/build.make CMakeFiles/clean_up.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_up.dir/build.make CMakeFiles/clean_up.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles --progress-num= "Built target clean_up"
+.PHONY : CMakeFiles/clean_up.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/clean_up.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clean_up.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zarawasique/projects/PokemonCatalogue/build/CMakeFiles 0
+.PHONY : CMakeFiles/clean_up.dir/rule
+
+# Convenience name for target.
+clean_up: CMakeFiles/clean_up.dir/rule
+.PHONY : clean_up
+
+# clean rule for target.
+CMakeFiles/clean_up.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_up.dir/build.make CMakeFiles/clean_up.dir/clean
+.PHONY : CMakeFiles/clean_up.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
