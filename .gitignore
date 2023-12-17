@@ -2,12 +2,12 @@
 
 PokemonCatalogue
 CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
+build/CMakeCache.txt
+build/CMakeFiles
 CMakeScripts
 Testing
-Makefile
-cmake_install.cmake
+build/Makefile
+build/cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
