@@ -3,6 +3,7 @@
 #include <utility>
 #include <iomanip>
 #include <iostream>
+#include <string>
 
 
 Pokemon::Pokemon()
@@ -37,11 +38,17 @@ void Pokemon::display(std::ostream &outs) const
 
 }
 
-void Pokemon::read(std::istream& ins) { //temp read function, since reading should stop at semicolons and not whitespace
-    ins >> this->name;
-    ins >> this->number;
-    ins >> this->gen;
-    ins >> this->type;
+void Pokemon::read(std::istream& ins) {
+    std::string numberWithSC, genWithSC;
+    std::getline(ins, this->name, ';');
+
+    std::getline(ins, numberWithSC, ';');
+    this->number = std::stoi(numberWithSC);
+
+    std::getline(ins, genWithSC, ';');
+    this->gen = std::stoi(genWithSC);
+
+    std::getline(ins, this->type, ';');
 
 }
 
