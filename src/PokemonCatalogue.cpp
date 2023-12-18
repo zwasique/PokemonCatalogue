@@ -59,7 +59,6 @@ void fillAll(std::set<std::string> fileToRead){
 void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
     
     while (instruction != "E") {
-        while (instruction == "N" || instruction == "T" || instruction == "A" || instruction == "E'") {
 
             if (instruction == "N") //list Pokémon by numerical order
                 std::cout << catalogue;
@@ -73,7 +72,7 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
             std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit"
                       << std::endl;
             std::cin >> instruction;
-        }
+
 
          }
 
