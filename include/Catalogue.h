@@ -49,7 +49,7 @@ public:
     void sortType() const;
 
     void fillCatalogue(const std::set<std::string>& generationFiles);
-    void readGens(std::istream& ins);
+    void readGen(std::istream& ins);
 
 
 };

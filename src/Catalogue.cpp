@@ -24,11 +24,11 @@ void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
 
     for (const std::string& file: generationFiles) {
         std::ifstream infile(file);
-        readGens(infile);
+        readGen(infile);
     }
 }
 
-void Catalogue::readGens(std::istream& ins){
+void Catalogue::readGen(std::istream& ins){
     while (ins){
 
         Pokemon pokemon;
