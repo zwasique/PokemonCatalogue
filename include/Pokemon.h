@@ -11,8 +11,8 @@ class Pokemon{
 
 private:
     std::string name;
-    int gen;
     int number;
+    int gen;
     std::string type;
 
     //std::string specialTag;
@@ -22,7 +22,7 @@ private:
 
 
 public:
-    // Default to false for all booleans, "None" type, number 0, generation 0
+    //  "None" name, number 0, generation 0, "None" type
     Pokemon();
 
 
