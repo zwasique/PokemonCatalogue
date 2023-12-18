@@ -29,7 +29,7 @@ int main () {
 
 
 std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //instruction has already been initialised to an invalid value
-    while (instruction != "F"){
+    while (instruction != "C"){
 
         if (instruction == "A"){
             fillAll(filesToRead);
@@ -41,8 +41,9 @@ std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string
                 exit(0);
         }
 
-        std::cout << "Enter a number (1-9), F to finish entering files, or E to exit the program." << std::endl;
+        std::cout << "Enter a generation number 1-9, C to continue, or E to exit the program: ";
         std::cin >> instruction;
+        std::cout << "\n";
 
     }
     return filesToRead;
@@ -69,9 +70,9 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
             else if (instruction == "E")
                 exit(0);
 
-            std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit"
-                      << std::endl;
+            std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit: ";
             std::cin >> instruction;
+            std::cout << "\n";
 
 
          }
