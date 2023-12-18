@@ -15,6 +15,7 @@ private:
     int gen;
     std::string type;
 
+
     //std::string specialTag;
 
     //std::vector<Pokemon> evolutions;
@@ -41,6 +42,8 @@ public:
 
     bool operator==(const Pokemon& otherPokemon) const;
 
+    void read(std::istream& ins);
+
 };
 
 inline
@@ -48,6 +51,11 @@ std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
 {
     monster.display(outs);
     return outs;
+}
+
+std::istream& operator>>(std::istream& ins, Pokemon pokemon){
+    pokemon.read(ins);
+    return ins;
 }
 
 

@@ -37,6 +37,14 @@ void Pokemon::display(std::ostream &outs) const
 
 }
 
+void Pokemon::read(std::istream& ins) { //temp read function, since reading should stop at semicolons and not whitespace
+    ins >> this->name;
+    ins >> this->number;
+    ins >> this->gen;
+    ins >> this->type;
+
+}
+
 std::string Pokemon::getName() const
 {
     return this-> name;

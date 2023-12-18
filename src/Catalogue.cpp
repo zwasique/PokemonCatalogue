@@ -1,5 +1,6 @@
 #include "../include/Catalogue.h"
 #include <iostream>
+#include <fstream>
 
 
 Catalogue::iterator Catalogue::begin()
@@ -19,15 +20,20 @@ Catalogue::const_iterator Catalogue::end() const
     return allPokemon.end();
 }
 
-void fillCatalogue(std::set<std::string> generationFiles){
+void Catalogue::fillCatalogue(std::set<std::string> generationFiles){
 
-    for (std::string file: generationFiles)
+    for (std::string file: generationFiles) {
         std::ifstream infile(file);
-        readGens(file);
-
+        readGens(infile);
+    }
 }
 
 void Catalogue::readGens(std::istream& ins){
+    while (ins){
+
+        Pokemon pokemon;
+        ins >> pokemon;
+    }
 
 }
 void Catalogue::display(std::ostream& outs) const {
