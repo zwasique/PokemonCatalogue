@@ -5,6 +5,13 @@
 #include "../include/Pokemon.h"
 #include "../include/Catalogue.h"
 
+#define MAGENTA_TEXT "\033[0;35m"
+
+#define YELLOW_TEXT "\033[0;33m"
+
+#define RESET_TEXT "\033[0m"
+
+
 //Function declarations
 void chooseFiles(std::set<std::string> filesToRead, std::string instruction); //maybe add a remove files option
 void fillAll(std::set<std::string> fileToRead);
@@ -16,10 +23,12 @@ int main () {
     std::set<std::string> chosenFiles;
     Catalogue pokemonCatalogue;
 
-    std::cout << "Which Pokemon generations do you wish to include?" << std::endl;
+    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << RESET_TEXT << "\n";
     chooseFiles(chosenFiles, direction);
 
     pokemonCatalogue.fillCatalogue(chosenFiles);
+
+    std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?" << RESET_TEXT << "\n";
 
     pokemonSortMenu(pokemonCatalogue, direction);
 
