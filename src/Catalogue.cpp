@@ -20,9 +20,9 @@ Catalogue::const_iterator Catalogue::end() const
     return allPokemon.end();
 }
 
-void Catalogue::fillCatalogue(std::set<std::string> generationFiles){
+void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
 
-    for (std::string file: generationFiles) {
+    for (const std::string& file: generationFiles) {
         std::ifstream infile(file);
         readGens(infile);
     }
@@ -33,6 +33,7 @@ void Catalogue::readGens(std::istream& ins){
 
         Pokemon pokemon;
         ins >> pokemon;
+        allPokemon.push_back(pokemon);
     }
 
 }
