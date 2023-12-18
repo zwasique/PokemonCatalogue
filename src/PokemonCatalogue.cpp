@@ -41,7 +41,7 @@ std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string
                 exit(0);
         }
 
-        std::cout << "Enter a generation number 1-9, C to continue, or E to exit the program: ";
+        std::cout << "Enter a generation number 1-9, A to add all files, C to continue, or E to exit the program: ";
         std::cin >> instruction;
         std::cout << "\n";
 

@@ -48,7 +48,8 @@ void Catalogue::display(std::ostream& outs) const {
 void Catalogue::sortAlpha() const
 {
     //use copy constructor
-    Catalogue toSort(*this);
+    std::cout << "not yet buddy \n";
+    //Catalogue toSort(*this);
     //sort the copied version
     //call display function
     //std::cout << toSort;
@@ -57,7 +58,7 @@ void Catalogue::sortAlpha() const
 
 void Catalogue::sortType() const
 {
-
+    std::cout << "not yet buddy \n";
     //use copy constructor
     //sort copied version
     //call display function
