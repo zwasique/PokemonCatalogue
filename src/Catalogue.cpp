@@ -37,6 +37,9 @@ void Catalogue::sortType() const
     //call display function
 }
 
+void Catalogue::readFiles(std::set<std::string> chosenFiles){
+    
+}
 
 void Catalogue::display(std::ostream& outs) const {
 

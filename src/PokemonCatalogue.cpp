@@ -62,8 +62,7 @@ void pokemonSortMenu(Catalogue catalogue, std::string instruction){
         while (instruction == "N" || instruction == "T" || instruction == "A" || instruction == "E'") {
 
             if (instruction == "N") //list Pokémon by numerical order
-                break; //temporary
-                //std::cout << catalogue;
+                std::cout << catalogue;
             else if (instruction == "A") //sort Pokemon alphabetically by name
                 catalogue.sortAlpha();
             else if (instruction == "T") //see all Pokemon of a type, or organise by type
