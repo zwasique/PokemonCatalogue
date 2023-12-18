@@ -70,7 +70,7 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
     
     while (instruction != "E") {
 
-            if (instruction == "N") //list Pokémon by numerical order
+            if (instruction == "G") //list Pokémon by numerical order
                 std::cout << catalogue;
             else if (instruction == "A") //sort Pokemon alphabetically by name
                 catalogue.sortAlpha();
