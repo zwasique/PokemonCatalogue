@@ -8,7 +8,7 @@
 //Function declarations
 std::set<std::string> chooseFiles(std::set<std::string> filesToRead, std::string instruction); //maybe add a remove files option
 void fillAll(std::set<std::string> fileToRead);
-void pokemonSortMenu(Catalogue catalogue, std::string instruction);
+void pokemonSortMenu(const Catalogue& catalogue, std::string instruction);
 
 int main () {
 
@@ -56,7 +56,7 @@ void fillAll(std::set<std::string> fileToRead){
 
 }
 
-void pokemonSortMenu(Catalogue catalogue, std::string instruction){
+void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
     
     while (instruction != "E") {
         while (instruction == "N" || instruction == "T" || instruction == "A" || instruction == "E'") {
