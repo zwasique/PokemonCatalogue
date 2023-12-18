@@ -81,7 +81,6 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
 
             std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and E to exit: ";
             std::cin >> instruction;
-            std::cout << "\n";
 
 
          }

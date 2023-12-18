@@ -39,10 +39,13 @@ void Catalogue::readGen(std::istream& ins){
 }
 void Catalogue::display(std::ostream& outs) const {
 
-    for (const Pokemon& monster: *this){
-        outs << monster;
-    }
+    //for (const Pokemon& monster: *this){
+    //    outs << monster;
+    //}
 
+    for (const auto & it : allPokemon){
+        outs << it;
+    }
 }
 
 void Catalogue::sortAlpha() const
