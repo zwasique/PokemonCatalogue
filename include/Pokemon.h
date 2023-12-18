@@ -53,6 +53,7 @@ std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
     return outs;
 }
 
+inline
 std::istream& operator>>(std::istream& ins, Pokemon pokemon){
     pokemon.read(ins);
     return ins;
