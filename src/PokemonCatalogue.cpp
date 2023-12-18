@@ -19,7 +19,7 @@ int main () {
     std::cout << "Which Pokemon generations do you wish to include?" << std::endl;
     chooseFiles(chosenFiles, direction);
 
-    pokemonCatalogue.readFiles(chosenFiles);
+    //pokemonCatalogue.readFiles(chosenFiles); replace with fillCatalogue, probably
 
     pokemonSortMenu(pokemonCatalogue, direction);
 

@@ -19,6 +19,25 @@ Catalogue::const_iterator Catalogue::end() const
     return allPokemon.end();
 }
 
+void fillCatalogue(std::set<std::string> generationFiles){
+
+    for (std::string file: generationFiles)
+        std::ifstream infile(file);
+        readGens(file);
+
+}
+
+void Catalogue::readGens(std::istream& ins){
+
+}
+void Catalogue::display(std::ostream& outs) const {
+
+    for (const Pokemon& monster: *this){
+        outs << monster;
+    }
+
+}
+
 void Catalogue::sortAlpha() const
 {
     //use copy constructor
@@ -35,16 +54,4 @@ void Catalogue::sortType() const
     //use copy constructor
     //sort copied version
     //call display function
-}
-
-void Catalogue::readFiles(std::set<std::string> chosenFiles){
-    
-}
-
-void Catalogue::display(std::ostream& outs) const {
-
-    for (const Pokemon& monster: *this){
-        outs << monster;
-    }
-
 }

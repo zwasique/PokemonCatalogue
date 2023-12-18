@@ -42,12 +42,14 @@ public:
     const_iterator begin() const;
     const_iterator end() const;
 
-    void readFiles(std::set<std::string> chosenFiles);
 
     void display(std::ostream& outs) const;
 
     void sortAlpha() const;
     void sortType() const;
+
+    void fillCatalogue(std::set<std::string> generationFiles);
+    void readGens(std::istream& ins);
 
 
 };
