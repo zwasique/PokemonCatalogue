@@ -52,7 +52,7 @@ public:
     void fillCatalogue(const std::set<std::string>& generationFiles);
     void readGen(std::istream& ins);
 
-    PokemonCatalogue getPokemonList();
+    PokemonCatalogue getAllPokemon();
 
 
 };

@@ -20,7 +20,7 @@ Catalogue::const_iterator Catalogue::end() const
     return allPokemon.end();
 }
 
-Catalogue::PokemonCatalogue Catalogue::getPokemonList() {
+Catalogue::PokemonCatalogue Catalogue::getAllPokemon() {
     return allPokemon;
 }
 
