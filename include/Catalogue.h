@@ -25,6 +25,7 @@ private:
     PokemonCatalogue allPokemon;
 
 public:
+
     Catalogue() = default;
 
 
@@ -50,6 +51,8 @@ public:
 
     void fillCatalogue(const std::set<std::string>& generationFiles);
     void readGen(std::istream& ins);
+
+    PokemonCatalogue getPokemonList();
 
 
 };

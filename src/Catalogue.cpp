@@ -20,6 +20,10 @@ Catalogue::const_iterator Catalogue::end() const
     return allPokemon.end();
 }
 
+Catalogue::PokemonCatalogue Catalogue::getPokemonList() {
+    return allPokemon;
+}
+
 void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
     //std::cerr<< "void Catalogue::fillCatalogue(const std::setMstd::string>& generationFiles)";
 
