@@ -5,9 +5,13 @@
 #include "../include/Pokemon.h"
 #include "../include/Catalogue.h"
 
-#define MAGENTA_TEXT "\033[0;35m"
 
-#define YELLOW_TEXT "\033[0;33m"
+#define MAGENTA_TEXT "\033[38;5;200m"
+
+
+#define WHITE_TEXT "\033[1;37m"
+#define YELLOW_TEXT "\033[38;5;220m"
+
 
 #define RESET_TEXT "\033[0m"
 
@@ -24,16 +28,17 @@ int main () {
     Catalogue pokemonCatalogue;
 
 
-    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << "\n" << RESET_TEXT;
+    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << "\n" << WHITE_TEXT;
     chooseFiles(chosenFiles, direction);
+    std::cout << RESET_TEXT;
 
 
     pokemonCatalogue.fillCatalogue(chosenFiles);
 
     std::cout << std::endl;
-std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?"  << "\n" << RESET_TEXT;
-
+    std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?"  << "\n" << WHITE_TEXT;
     pokemonSortMenu(pokemonCatalogue, direction);
+    std::cout << RESET_TEXT;
 
     return 0;
 
@@ -77,7 +82,7 @@ void fillAll(std::set<std::string>& fileToRead){
 }
 
 void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
-    //std::cerr << MAGENTA_TEXT<< "void pokemonSortMenu(const Catalogue& catalogue, std::string instruction\n"<< RESET_TEXT;
+    //std::cerr << MAGENTA_TEXT<< "void pokemonSortMenu(const Catalogue& catalogue, std::string instruction)\n"<< RESET_TEXT;
     while (instruction != "E") {
 
             if (instruction == "G") //list Pokémon by numerical order
