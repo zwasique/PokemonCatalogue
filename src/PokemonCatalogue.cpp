@@ -23,11 +23,13 @@ int main () {
     std::set<std::string> chosenFiles;
     Catalogue pokemonCatalogue;
 
+
     std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << RESET_TEXT << "\n";
     chooseFiles(chosenFiles, direction);
 
     pokemonCatalogue.fillCatalogue(chosenFiles);
 
+    std::cout << std::endl;
     std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?" << RESET_TEXT << "\n";
 
     pokemonSortMenu(pokemonCatalogue, direction);
