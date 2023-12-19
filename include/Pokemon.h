@@ -49,12 +49,14 @@ public:
 inline
 std::ostream& operator<<(std::ostream &outs, const Pokemon &monster)
 {
+    std::cerr << "std::ostream& operator<< (std::ostream &outs, const Pokemon & monster)";
     monster.display(outs);
     return outs;
 }
 
 inline
 std::istream& operator>>(std::istream& ins, Pokemon pokemon){
+    std::cerr << "std::istream& operator>> (std::istream& ins, Pokemon pokemon)";
     pokemon.read(ins);
     return ins;
 }
