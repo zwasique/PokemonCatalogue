@@ -28,7 +28,7 @@ int main () {
     Catalogue pokemonCatalogue;
 
 
-    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << "\n" << WHITE_TEXT;
+    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?\n\n" << WHITE_TEXT;
     chooseFiles(chosenFiles, direction);
     std::cout << RESET_TEXT;
 
@@ -36,7 +36,7 @@ int main () {
     pokemonCatalogue.fillCatalogue(chosenFiles);
 
     std::cout << std::endl;
-    std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?"  << "\n" << WHITE_TEXT;
+    std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?\n\n" << WHITE_TEXT;
     pokemonSortMenu(pokemonCatalogue, direction);
     std::cout << RESET_TEXT;
 
@@ -57,11 +57,11 @@ std::set<std::string> chooseFiles(std::set<std::string>& filesToRead, std::strin
             std::string fileName = "Pokemon" + instruction + ".txt";
         //    std::cerr << MAGENTA_TEXT<< "added" << fileName << "\n"<< RESET_TEXT;
             filesToRead.insert(fileName);
-        } else if (instruction == "E") {
+        } else if (instruction == "e") {
                 exit(0);
         }
 
-        std::cout << "Enter a generation number 1-9, A to add all files, C to continue, or E to exit the program: ";
+        std::cout << "Enter a generation number 1-9, A to add all files, C to continue, or e to exit the program: ";
         std::cin >> instruction;
         std::cout << "\n";
 
