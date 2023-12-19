@@ -26,10 +26,11 @@ int main () {
 
     std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << RESET_TEXT << "\n";
     chooseFiles(chosenFiles, direction);
-    for (auto it = chosenFiles.begin(); it != chosenFiles.end(); ++it){
-        std:: cout << *it << " ";
+    for (auto it = chosenFiles.begin(); it != chosenFiles.end(); ++it){ //this. won't do anything. hmm
+        std::cout << *it << " ";
+        std::cout << "he" << std::endl;
     }
-    std::cerr << "\n";
+    std::cout << "hi" << std::endl;
 
     pokemonCatalogue.fillCatalogue(chosenFiles);
 
