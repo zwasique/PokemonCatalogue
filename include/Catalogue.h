@@ -57,7 +57,7 @@ public:
 inline
 std::ostream& operator<<(std::ostream& outs, const Catalogue& catalogue)
 {
-    std::cerr << "std::ostream& operator << (std::ostream* outs, const Catalogue& catalogue \n";
+    //std::cerr << "std::ostream& operator << (std::ostream* outs, const Catalogue& catalogue \n";
     catalogue.display(outs);
     return outs;
 }

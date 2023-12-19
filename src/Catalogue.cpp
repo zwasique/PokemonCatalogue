@@ -21,7 +21,7 @@ Catalogue::const_iterator Catalogue::end() const
 }
 
 void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
-    std::cerr<< "void Catalogue::fillCatalogue(const std::setMstd::string>& generationFiles)";
+    //std::cerr<< "void Catalogue::fillCatalogue(const std::setMstd::string>& generationFiles)";
 
     for (const std::string& file: generationFiles) {
         std::ifstream infile(file);
@@ -30,7 +30,7 @@ void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
 }
 
 void Catalogue::readGen(std::istream& ins){
-    std::cerr << "void Catalogue::readGen(std::istream& ins)";
+    //std::cerr << "void Catalogue::readGen(std::istream& ins)";
     while (ins){
 
         Pokemon pokemon;
@@ -41,10 +41,8 @@ void Catalogue::readGen(std::istream& ins){
 }
 void Catalogue::display(std::ostream& outs) const {
 
-    //for (const Pokemon& monster: *this){
-    //    outs << monster;
-    //}
-    std::cerr << "void Catalogue::display(std::ostream& outs) const";
+
+    //std::cerr << "void Catalogue::display(std::ostream& outs) const";
     for (const auto & it : allPokemon){
         outs << it;
     }

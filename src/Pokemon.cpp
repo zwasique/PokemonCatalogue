@@ -32,7 +32,7 @@ bool Pokemon::operator==(const Pokemon& otherPokemon) const
 
 void Pokemon::display(std::ostream &outs) const
 {
-    std::cerr << "Void Pokemon::display(std::ostream &outs) const";
+    //std::cerr << "Void Pokemon::display(std::ostream &outs) const";
     outs << "Name: " << std::setw(15) << getName() << "Number: " << std::setw(4) << getNumber()
          << "Type: " << std::setw(15) << getType() << "Gen: " << std::setw(4) << getGen() << "\n";
          //<< "Tag: " << getSpecialTag() << "\n";
@@ -40,7 +40,7 @@ void Pokemon::display(std::ostream &outs) const
 }
 
 void Pokemon::read(std::istream& ins) {
-    std::cerr << "void Pokemon::read(std::istream & ins)";
+    //std::cerr << "void Pokemon::read(std::istream & ins)";
     std::string numberWithSC, genWithSC;
     std::getline(ins, this->name, ';');
 
