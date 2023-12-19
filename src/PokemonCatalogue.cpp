@@ -26,6 +26,10 @@ int main () {
 
     std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?" << RESET_TEXT << "\n";
     chooseFiles(chosenFiles, direction);
+    for (auto it = chosenFiles.begin(); it != chosenFiles.end(); ++it){
+        std:: cout << *it << " ";
+    }
+    std::cerr << "\n";
 
     pokemonCatalogue.fillCatalogue(chosenFiles);
 
@@ -57,10 +61,7 @@ void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //
         std::cout << "\n";
 
     }
-    for (auto it = filesToRead.begin(); it != filesToRead.end(); ++it){
-        std:: cout << *it << " ";
-    }
-    std::cerr << "\n";
+
 
 }
 
