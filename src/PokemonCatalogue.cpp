@@ -57,10 +57,15 @@ void chooseFiles(std::set<std::string> filesToRead, std::string instruction){ //
         std::cout << "\n";
 
     }
+    for (auto it = filesToRead.begin(); it != filesToRead.end(); ++it){
+        std:: cout << *it << " ";
+    }
+    std::cerr << "\n";
 
 }
 
 void fillAll(std::set<std::string> fileToRead){
+    std::cerr<< "void fillAll(set<string> fileToRead)\n";
     for (int i = 1; i < 10; i ++){
         std::string fileName = "Pokemon" + std::to_string(i) + ".txt";
         fileToRead.insert(fileName);
