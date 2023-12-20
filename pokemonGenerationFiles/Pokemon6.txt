@@ -18,7 +18,7 @@ Vivillon; 666; 6; Bug/Flying; None;
 Litleo; 667; 6; Fire/Normal; Pyroar;
 Pyroar; 668; 6; Fire/Normal; None;
 Flabébé; 669; 6; Fairy; Floette;
-Floettel 670; 6; Fairy; None;
+Floettel; 670; 6; Fairy; None;
 Florges; 671; 6; Fairy; None;
 Skiddo; 672; 6; Grass; Gogoat;
 Gogoat; 673; 6; Grass; None;
