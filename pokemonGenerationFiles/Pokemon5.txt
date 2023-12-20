@@ -38,7 +38,7 @@ Excadrill; 530; 5; Ground/Steel; None;
 Audino; 531; 5; Normal; None;
 Timburr; 532; 5; Fighting; Gurdurr;
 Gurdurr; 533; 5; Fighting; Conkeldurr;
-Conkeldurr; 534; 5; Fighting;
+Conkeldurr; 534; 5; Fighting; None;
 Tympole; 535; 5; Water; Palpitoad;
 Palpitoad; 536; 5; Water/Ground; Seismitoad;
 Seismitoad; 537; 5; Water/Ground; None;
