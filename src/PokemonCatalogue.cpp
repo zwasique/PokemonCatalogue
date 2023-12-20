@@ -27,13 +27,12 @@ int main () {
     std::set<std::string> chosenFiles;
     Catalogue pokemonCatalogue;
 
-
     std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?\n\n" << WHITE_TEXT;
     chooseFiles(chosenFiles, direction);
     std::cout << RESET_TEXT;
 
-
     pokemonCatalogue.fillCatalogue(chosenFiles);
+
 
     std::cout << std::endl;
     std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?\n\n" << WHITE_TEXT;
@@ -62,7 +61,6 @@ std::set<std::string> chooseFiles(std::set<std::string>& filesToRead, std::strin
 
         std::cout << "Enter a generation number 1-9, A to add all files, C to continue, or e to exit the program: ";
         std::cin >> instruction;
-        std::cout << "\n";
 
     }
 
