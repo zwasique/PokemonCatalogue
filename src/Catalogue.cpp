@@ -32,8 +32,8 @@ void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
 
     for (const std::string& file: generationFiles) {
         fs::path fullPath = withDirectory / file;
-        std::string stringPath = fullPath.string();
-        std::ifstream fileStream(stringPath);
+        //std::string stringPath = fullPath.string();
+        std::ifstream fileStream(fullPath);
 
 
         if (fileStream.is_open()){
