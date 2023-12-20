@@ -18,5 +18,5 @@ Currently I am making sure that the Pokemon files are read into the Catalogue co
 	- and coding 'defensively'.. basically not being arrogant.
 - how to implement an std::set
 - _why_ operator << is often defined outside a class (or as a 'friend' function) but defined in the same class file (if there is one)
-	- I mean, I think I do..
-- how to change the colour of text outputted to terminal!
+	- I mean, I _think_ I do.. (no more arrogance, remember?)
+- how to change the colour of text outputted to terminal :)
