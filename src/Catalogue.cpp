@@ -38,16 +38,17 @@ void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
 
         if (fileStream.is_open()){
             readGen(fileStream);
+            fileStream.close();
         } else {
             std::cerr << "file not found\n";
         }
     }
+
 }
 
 void Catalogue::readGen(std::istream& ins){
     //std::cerr << "void Catalogue::readGen(std::istream& ins)";
-
-    while (ins){
+    while (!ins.eof()) {
 
         Pokemon pokemon;
         ins >> pokemon;

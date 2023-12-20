@@ -45,28 +45,36 @@ void Pokemon::read(std::istream& ins) {
     //std::cerr << "void Pokemon::read(std::istream & ins)";
     std::string numberString, genString;
     std::getline(ins, this->name, ';');
+    std::cerr << getName() << " ";
+
 
     std::getline(ins, numberString, ';');
     //std::cerr << numberString << "\n";
-
     std::string::iterator end_pos = std::remove(numberString.begin(), numberString.end(), ' ');
     numberString.erase(end_pos, numberString.end());
-    //std::cerr << numberString << "\n";
-    this->number = std::stoi(numberString, nullptr, 10);
-    //std::cerr << numberString << " ";
+    try{
+        this->number = std::stoi(numberString, nullptr, 10);
+    } catch (std::exception &err) {
 
-
+    }
+    std::cerr << this->getNumber() << " ";
 
 
     std::getline(ins, genString, ';');
-
     std::string::iterator end_posi = std::remove(genString.begin(), genString.end(), ' ');
     genString.erase(end_posi, genString.end());
-    this->gen = std::stoi(genString, nullptr, 10);
-    //std::cerr << genString << "\n";
+    try{
+        this->gen = std::stoi(genString, nullptr, 10);
+    } catch (std::exception &err){
+
+    }
+    std::cerr << getGen() << " ";
 
     std::getline(ins, this->type, ';');
+    std::cerr << getType() << " ";
+
     std::getline(ins, this->evolvedForm, ';');
+    std::cerr << getEvolvedForm() << "\n";
 
 }
 
