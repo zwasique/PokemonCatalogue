@@ -80,13 +80,13 @@ Zacian; 888; 8; Fairy/Steel; None;
 Zamazenta; 889; 8; Fighting/Steel; None;
 Eternatus; 890; 8; Poison/Dragon; None;
 Kubfu; 891; 8; Fighting; Urshifu;
-Urshifu; 892; 8; Fighting/Dark Fighting/Water; Single-Strike Style, Rapid-Strike Style (evolutionary forms)
+Urshifu; 892; 8; Fighting/Dark Fighting/Water; Single-Strike Style, Rapid-Strike Style;
 Zarude; 893; 8; Dark/Grass; None;
 Regieleki; 894; 8; Electric; None;
 Regidrago; 895; 8; Dragon; None;
 Glastrier; 896; 8; Ice; Spectrier;
 Spectrier; 897; 8; Ghost; Glastrier;
-Calyrex; 898; 8; Psychic/Grass; Ice Rider with Glastrier, Shadow Rider with Spectrier
+Calyrex; 898; 8; Psychic/Grass; Ice Rider with Glastrier, Shadow Rider with Spectrier;
 Wyrdeer; 899; 8; Normal/Psychic; None;
 Kleavor; 900; 8; Bug/Rock; None;
 Ursaluna; 901; 8; Ground/Normal; None;
