@@ -14,6 +14,7 @@ private:
     int number;
     int gen;
     std::string type;
+    std::string evolvedForm;
 
 
     //std::string specialTag;
@@ -23,11 +24,11 @@ private:
 
 
 public:
-    //  "None" name, number 0, generation 0, "None" type
+    //  "None" name, number 0, generation 0, "None" type, "None" evolvedForm
     Pokemon();
 
 
-    Pokemon(const std::string& nameIn, int numIn, int genIn, std::string typeIn);
+    Pokemon(const std::string& nameIn, int numIn, int genIn, std::string typeIn, std::string evolvedToIn);
 
     ~Pokemon();
 
@@ -35,6 +36,7 @@ public:
     int getNumber() const;
     int getGen() const;
     std::string getType() const;
+    std::string getEvolvedForm() const;
     //std::string getSpecialTag() const;
 
 
