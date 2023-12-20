@@ -50,7 +50,7 @@ Rabsca; 954; 9; Bug/Psychic; None;
 Flittle; 955; 9; Psychic; Espathra;
 Espathra; 956; 9; Psychic; None;
 Tinkatink; 957; 9; Fairy/Steel; Tinkatuff;
-Tinkatuff; 958; 9; 9; Fairy/Steel; Tinkaton;
+Tinkatuff; 958; 9; Fairy/Steel; Tinkaton;
 Tinkaton; 959; 9; Fairy/Steel; None;
 Wiglett; 960; 9; Water; Wugtrio;
 Wugtrio; 961; 9; Water; None;
