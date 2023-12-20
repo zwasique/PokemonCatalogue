@@ -6,7 +6,7 @@ This program allows you to select from Generations 1-9 to select which Pokémon 
 From here, you will (not yet implemented) be able to view your Pokemon sorted numerically, alphabetically, and by type.
 
 ## Project Status
-Currently I am making sure that the Pokemon files are read into the Catalogue correctly;
+Currently I am making sure that the Pokemon files are read into the Catalogue correctly.
 
 ## How it Works
 ...Let me get it to work first.
