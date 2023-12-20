@@ -52,7 +52,9 @@ void Catalogue::readGen(std::istream& ins){
 
         Pokemon pokemon;
         ins >> pokemon;
-        allPokemon.push_back(pokemon);
+
+        if (pokemon.getGen() != 0)
+            allPokemon.push_back(pokemon);
     }
 
 }
