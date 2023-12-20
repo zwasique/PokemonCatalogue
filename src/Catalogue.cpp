@@ -1,7 +1,8 @@
 #include "../include/Catalogue.h"
-#include <iostream>
 #include <fstream>
+#include <filesystem>
 
+namespace fs = std::__fs::filesystem;
 
 Catalogue::iterator Catalogue::begin()
 {
@@ -26,15 +27,26 @@ Catalogue::PokemonCatalogue Catalogue::getAllPokemon() {
 
 void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
     //std::cerr<< "void Catalogue::fillCatalogue(const std::setMstd::string>& generationFiles)";
+    fs::path parentPath = "..";
+    fs::path withDirectory = parentPath / "pokemonGenerationFiles";
 
     for (const std::string& file: generationFiles) {
-        std::ifstream infile(file);
-        readGen(infile);
+        fs::path fullPath = withDirectory / file;
+        std::string stringPath = fullPath.string();
+        std::ifstream fileStream(stringPath);
+
+
+        if (fileStream.is_open()){
+            readGen(fileStream);
+        } else {
+            std::cerr << "file not found\n";
+        }
     }
 }
 
 void Catalogue::readGen(std::istream& ins){
     //std::cerr << "void Catalogue::readGen(std::istream& ins)";
+
     while (ins){
 
         Pokemon pokemon;
