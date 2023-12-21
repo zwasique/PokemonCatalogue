@@ -34,7 +34,7 @@ void Pokemon::display(std::ostream &outs) const
 {
     //std::cerr << "Void Pokemon::display(std::ostream &outs) const";
 
-    outs << std::left << "Gen: " << std::setw(8) << getGen() << "Name: " << std::setw(20) << getName()
+    outs << std::left << "Gen: " << std::setw(4) << getGen() << "Name: "
         << "Number: " << std::setw(8) << getNumber() << "Type: " << std::setw(20) << getType() << "Evolved Form: "
         << getEvolvedForm() << "\n";
 
@@ -53,7 +53,7 @@ void Pokemon::read(std::istream& ins) {
         try {
             this->number = std::stoi(numberString, nullptr, 10);
         } catch (std::exception &err) {
-            std::cerr << "bruh";
+            std::cerr << "Failed Conversion\n";
         }
 
         std::getline(ins, genString, ';');
@@ -62,7 +62,7 @@ void Pokemon::read(std::istream& ins) {
         try {
             this->gen = std::stoi(genString, nullptr, 10);
         } catch (std::exception &err) {
-            std::cerr << "bruh";
+            std::cerr << "Failed Conversion\n";
         }
 
         std::getline(ins, this->type, ';');
