@@ -5,8 +5,6 @@
 #include <vector>
 
 
-//using namespace std::rel_ops; not sure if we'll need this
-
 class Pokemon{
 
 private:
@@ -16,10 +14,6 @@ private:
     std::string type;
     std::string evolvedForm;
 
-
-    //std::string specialTag;
-
-    //std::vector<Pokemon> evolutions;
 
 
 
@@ -37,8 +31,6 @@ public:
     int getGen() const;
     std::string getType() const;
     std::string getEvolvedForm() const;
-    //std::string getSpecialTag() const;
-
 
     void display(std::ostream &outs) const;
 
