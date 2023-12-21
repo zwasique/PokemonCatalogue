@@ -60,7 +60,6 @@ void Catalogue::readGen(std::istream& ins){
 }
 void Catalogue::display(std::ostream& outs) const {
 
-
     //std::cerr << "void Catalogue::display(std::ostream& outs) const";
     for (const auto & it : allPokemon){
         outs << it;
