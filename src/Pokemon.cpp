@@ -50,7 +50,7 @@ void Pokemon::read(std::istream& ins) {
 
 
         std::getline(ins, numberString, ';');
-        numberString.erase(std::remove_if(numberString.begin(), numberString.end(), ::isspace), numberString.end());
+        //numberString.erase(std::remove_if(numberString.begin(), numberString.end(), ::isspace), numberString.end());
         try {
             this->number = std::stoi(numberString, nullptr, 10);
         } catch (std::exception &err) {
@@ -59,7 +59,7 @@ void Pokemon::read(std::istream& ins) {
 
 
         std::getline(ins, genString, ';');
-        genString.erase(std::remove_if(genString.begin(), genString.end(), ::isspace), genString.end());
+        //genString.erase(std::remove_if(genString.begin(), genString.end(), ::isspace), genString.end());
         try {
             this->gen = std::stoi(genString, nullptr, 10);
         } catch (std::exception &err) {
