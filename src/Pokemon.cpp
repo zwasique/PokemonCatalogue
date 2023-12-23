@@ -47,18 +47,19 @@ void Pokemon::read(std::istream& ins) {
 
         std::getline(ins, this->name, ';');
 
+
+
         std::getline(ins, numberString, ';');
-        std::string::iterator end_pos = std::remove(numberString.begin(), numberString.end(), ' ');
-        numberString.erase(end_pos, numberString.end());
+        numberString.erase(std::remove_if(numberString.begin(), numberString.end(), ::isspace), numberString.end());
         try {
             this->number = std::stoi(numberString, nullptr, 10);
         } catch (std::exception &err) {
             std::cerr << "Failed Conversion\n";
         }
 
+
         std::getline(ins, genString, ';');
-        std::string::iterator end_posi = std::remove(genString.begin(), genString.end(), ' ');
-        genString.erase(end_posi, genString.end());
+        genString.erase(std::remove_if(genString.begin(), genString.end(), ::isspace), genString.end());
         try {
             this->gen = std::stoi(genString, nullptr, 10);
         } catch (std::exception &err) {
