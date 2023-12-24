@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 
+set (CMAKE_CXX_FLAGS "-lstdc++fs -std=c++17")
+
 # Collect source files
 set(SOURCES
        	src/PokemonCatalogue.cpp
