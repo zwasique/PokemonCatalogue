@@ -22,7 +22,7 @@ jobs:
         cmake-version: 'latest'  # Use the latest version
 
     - name: Configure and build
-      run: 
+      run: |
         cd build
         cmake ..
         make
