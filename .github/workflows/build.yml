@@ -21,10 +21,10 @@ jobs:
       with:
         cmake-version: 'latest'  # Use the latest version
 
-    #- name: Configure and build
-      #run: |
-        #mkdir build
-        #cd build
-        #cmake ..
-        #cmake --build .
-        #ctest --output-on-failure
+    - name: Configure and build
+      run: 
+        mkdir build
+        cd build
+        cmake ..
+        cmake --build .
+        ctest --output-on-failure
