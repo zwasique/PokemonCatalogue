@@ -34,7 +34,7 @@ void Pokemon::display(std::ostream &outs) const
 {
     //std::cerr << "Void Pokemon::display(std::ostream &outs) const";
 
-    outs << std::left << "Gen: " << std::setw(4) << getGen() << "Name: "
+    outs << std::left << "Gen: " << std::setw(4) << getGen() << "Name: " << std::setw(20) << getName()
         << "Number: " << std::setw(8) << getNumber() << "Type: " << std::setw(20) << getType() << "Evolved Form: "
         << getEvolvedForm() << "\n";
 
@@ -43,31 +43,31 @@ void Pokemon::display(std::ostream &outs) const
 void Pokemon::read(std::istream& ins) {
 
         //std::cerr << "void Pokemon::read(std::istream & ins)";
-        std::string numberString, genString;
+     std::string numberString, genString;
 
-        std::getline(ins, this->name, ';');
+     std::getline(ins, this->name, ';');
 
 
-        std::getline(ins, numberString, ';');
+     std::getline(ins, numberString, ';');
         //numberString.erase(std::remove_if(numberString.begin(), numberString.end(), ::isspace), numberString.end());
-        try {
-            this->number = std::stoi(numberString, nullptr, 10);
-        } catch (std::exception &err) {
-            std::cerr << "Failed Conversion\n";
-        }
+     try {
+         this->number = std::stoi(numberString, nullptr, 10);
+     } catch (std::exception &err) {
+         std::cerr << "Failed Conversion\n";
+     }
 
 
-        std::getline(ins, genString, ';');
+     std::getline(ins, genString, ';');
         //genString.erase(std::remove_if(genString.begin(), genString.end(), ::isspace), genString.end());
-        try {
-            this->gen = std::stoi(genString, nullptr, 10);
-        } catch (std::exception &err) {
-            std::cerr << "Failed Conversion\n";
-        }
+     try {
+         this->gen = std::stoi(genString, nullptr, 10);
+     } catch (std::exception &err) {
+         std::cerr << "Failed Conversion\n";
+     }
 
-        std::getline(ins, this->type, ';');
+     std::getline(ins, this->type, ';');
 
-        std::getline(ins, this->evolvedForm, ';');
+     std::getline(ins, this->evolvedForm, ';');
 
 	ins.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
