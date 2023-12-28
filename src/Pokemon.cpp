@@ -48,7 +48,6 @@ void Pokemon::read(std::istream& ins) {
         std::getline(ins, this->name, ';');
 
 
-
         std::getline(ins, numberString, ';');
         //numberString.erase(std::remove_if(numberString.begin(), numberString.end(), ::isspace), numberString.end());
         try {
@@ -69,6 +68,8 @@ void Pokemon::read(std::istream& ins) {
         std::getline(ins, this->type, ';');
 
         std::getline(ins, this->evolvedForm, ';');
+
+	ins.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 }
 
