@@ -11,7 +11,7 @@
 
 class Catalogue {
 public:
-    using PokemonCatalogue = std::list<Pokemon>;
+    using PokemonCatalogue = std::vector<Pokemon>;
 
     using iterator = PokemonCatalogue::iterator;
     using const_iterator = PokemonCatalogue::const_iterator;
@@ -52,7 +52,7 @@ public:
     void fillCatalogue(const std::set<std::string>& generationFiles);
     void readGen(std::istream& ins);
 
-    PokemonCatalogue getAllPokemon();
+    PokemonCatalogue getAllPokemon() const;
 
 
 };

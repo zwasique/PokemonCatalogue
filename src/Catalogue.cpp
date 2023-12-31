@@ -21,7 +21,7 @@ Catalogue::const_iterator Catalogue::end() const
     return allPokemon.end();
 }
 
-Catalogue::PokemonCatalogue Catalogue::getAllPokemon() {
+Catalogue::PokemonCatalogue Catalogue::getAllPokemon() const {
     return allPokemon;
 }
 
@@ -70,18 +70,16 @@ void Catalogue::display(std::ostream& outs) const {
 void Catalogue::sortAlpha() const
 {
     //use copy constructor
-    std::cout << "not yet buddy \n";
-    //Catalogue toSort(*this);
+    Catalogue toSort(*this);
     //sort the copied version
     //call display function
-    //std::cout << toSort;
+    std::sort(toSort.begin(), toSort.end(), [] (Pokemon& one, Pokemon& two){
+           return one.getName() > two.getName();});
+    std::cout << toSort;
 }
 
 
 void Catalogue::sortType() const
 {
-    std::cout << "not yet buddy \n";
-    //use copy constructor
-    //sort copied version
-    //call display function
+
 }
