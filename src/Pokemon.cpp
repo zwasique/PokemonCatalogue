@@ -34,7 +34,7 @@ void Pokemon::display(std::ostream &outs) const
 {
     //std::cerr << "Void Pokemon::display(std::ostream &outs) const";
 
-    outs << std::left << "Gen: " << std::setw(6) << getGen() << "Name: " << std::setw(14) << getName()
+    outs << std::left << "Gen: " << std::setw(6) << getGen() << "Name: " << std::setw(10) << getName()
         << "Number: " << std::setw(8) << getNumber() << "Type: " << std::setw(30) << getType() << "Evolved Form: "
         << getEvolvedForm() << "\n";
 
