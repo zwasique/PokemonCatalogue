@@ -83,8 +83,8 @@ void Catalogue::sortType(const std::string type) const
 {
 
     for (const Pokemon &monster: this->getAllPokemon()) {
-        std::size_t pos = monster.getType().find(type);
-        if (pos != std::string::npos)
+        int pos = monster.getType().find(type);
+        if (pos != monster.getType().length())
             std::cout << monster;
     }
     //use copy constructor
