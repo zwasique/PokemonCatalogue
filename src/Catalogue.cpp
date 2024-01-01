@@ -52,7 +52,7 @@ void Catalogue::readGen(std::istream& ins){
 
         Pokemon pokemon;
         ins >> pokemon;
-        std::cout << pokemon;
+        //std::cout << pokemon;
 
         if (pokemon.getGen() != 0)
             allPokemon.push_back(pokemon);
@@ -83,7 +83,7 @@ void Catalogue::sortType(const std::string type) const
 {
 
     for (const Pokemon &monster: this->getAllPokemon()) {
-        int pos = monster.getType().find(type);
+        std::size_t pos = monster.getType().find(type);
         if (pos != std::string::npos)
             std::cout << monster;
     }
