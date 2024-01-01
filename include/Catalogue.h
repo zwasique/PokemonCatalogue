@@ -47,7 +47,7 @@ public:
     void display(std::ostream& outs) const;
 
     void sortAlpha() const;
-    void sortType() const;
+    void sortType(const std::string type) const;
 
     void fillCatalogue(const std::set<std::string>& generationFiles);
     void readGen(std::istream& ins);

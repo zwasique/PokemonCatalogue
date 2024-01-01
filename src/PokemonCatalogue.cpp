@@ -82,14 +82,16 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
 
     while (instruction != "e") {
 
-            if (instruction == "G") //list Pokémon by numerical order
-                std::cout << catalogue;
-            else if (instruction == "A") //sort Pokemon alphabetically by name
-                catalogue.sortAlpha();
-            else if (instruction == "T") //see all Pokemon of a type, or organise by type
-                catalogue.sortType();
-            else if (instruction == "e")
-                exit(0);
+            if (instruction == "G"){ //list Pokémon by numerical order
+                std::cout << catalogue;}
+            else if (instruction == "A") {//sort Pokemon alphabetically by name
+                catalogue.sortAlpha();}
+            else if (instruction == "T"){ //see all Pokemon of a type, or organise by type
+                std::string type;
+                std::cin >> type;
+                catalogue.sortType(type);}
+            else if (instruction == "e"){
+                exit(0);}
 
             std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and e to exit: ";
             std::cin >> instruction;

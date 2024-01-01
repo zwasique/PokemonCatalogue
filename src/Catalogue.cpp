@@ -79,7 +79,15 @@ void Catalogue::sortAlpha() const
 }
 
 
-void Catalogue::sortType() const
+void Catalogue::sortType(const std::string type) const
 {
 
+    for (const Pokemon &monster: this->getAllPokemon()) {
+        int pos = monster.getType().find(type);
+        if (pos != std::string::npos)
+            std::cout << monster;
+    }
+    //use copy constructor
+    //sort copied version
+    //call display function
 }
