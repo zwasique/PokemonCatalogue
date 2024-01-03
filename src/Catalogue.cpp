@@ -74,7 +74,7 @@ void Catalogue::sortAlpha() const
     //sort the copied version
     //call display function
     std::sort(toSort.begin(), toSort.end(), [] (Pokemon& one, Pokemon& two){
-           return one.getName() > two.getName();});
+           return one.getName() < two.getName();});
     std::cout << toSort;
 }
 
