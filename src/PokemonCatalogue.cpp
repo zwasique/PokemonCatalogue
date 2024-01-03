@@ -87,7 +87,7 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
             else if (instruction == "A") {//sort Pokemon alphabetically by name
                 catalogue.sortAlpha();}
             else if (instruction == "T"){ //see all Pokemon of a type, or organise by type
-                std::cout << "Enter a type of pokemon to sort by";
+                std::cout << "Enter a type of pokemon to sort by: ";
                 std::string type;
                 std::cin >> type;
                 catalogue.sortType(type);}
