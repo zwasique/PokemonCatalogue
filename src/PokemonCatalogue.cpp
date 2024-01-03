@@ -46,9 +46,9 @@ int main () {
 
 std::set<std::string> chooseFiles(std::set<std::string>& filesToRead, std::string instruction){ //instruction has already been initialised to an invalid value
 
-    while (instruction != "C"){
+    while (instruction != "c"){
 
-        if (instruction == "A"){
+        if (instruction == "a"){
             fillAll(filesToRead);
 
             return filesToRead;
@@ -59,7 +59,7 @@ std::set<std::string> chooseFiles(std::set<std::string>& filesToRead, std::strin
                 exit(0);
         }
 
-        std::cout << "Enter a generation number 1-9, A to add all files, C to continue, or e to exit the program: ";
+        std::cout << "Enter a generation number 1-9, a to add all files, c to continue, or e to exit the program: ";
         std::cin >> instruction;
 
     }
@@ -82,11 +82,11 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
 
     while (instruction != "e") {
 
-            if (instruction == "G"){ //list Pokémon by numerical order
+            if (instruction == "g"){ //list Pokémon by numerical order
                 std::cout << catalogue;}
-            else if (instruction == "A") {//sort Pokemon alphabetically by name
+            else if (instruction == "a") {//sort Pokemon alphabetically by name
                 catalogue.sortAlpha();}
-            else if (instruction == "T"){ //see all Pokemon of a type, or organise by type
+            else if (instruction == "t"){ //see all Pokemon of a type, or organise by type
                 std::cout << "Enter a type of pokemon to sort by: ";
                 std::string type;
                 std::cin >> type;
@@ -94,7 +94,7 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
             else if (instruction == "e"){
                 exit(0);}
 
-            std::cout << "Enter G to sort by generation, T to sort by type, and A to sort alphabetically, and e to exit: ";
+            std::cout << "Enter g to sort by generation, t to sort by type, and a to sort alphabetically, and e to exit: ";
             std::cin >> instruction;
 
 
