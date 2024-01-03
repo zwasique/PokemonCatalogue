@@ -16,7 +16,7 @@ target_include_directories(PokemonCatalogue PRIVATE
 ${CMAKE_SOURCE_DIR}/../include)
 
 set_target_properties(PokemonCatalogue PROPERTIES
-        CXX_STANDARD 17
+        CXX_STANDARD 20
         CXX_STANDARD_REQUIRED YES
         CXX_EXTENSIONS NO)
 
