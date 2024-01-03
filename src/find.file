@@ -1,0 +1,15 @@
+sortType(std::string type){
+
+for (Pokemon monster: toSort.allPokemon){
+	int *p = std::find(toSort.begin(), toSort.end(), type)
+	if (*p != end()){
+		std::cout << Pokemon;
+	}	
+}
+
+
+std::vector<int>::iterator it;
+it = std::find(vec.begin(), vec.end(), ser);
+
+
+std::vector<Pokemon>

@@ -1,5 +1,4 @@
 #include "../include/Pokemon.h"
-
 #include <utility>
 #include <iomanip>
 #include <iostream>
@@ -34,10 +33,11 @@ void Pokemon::display(std::ostream &outs) const
 {
     //std::cerr << "Void Pokemon::display(std::ostream &outs) const";
 
-    outs << std::left << "Gen: " << std::setw(4) << getGen() << "Name: " << std::setw(14) << getName()
-        << "Number: " << std::setw(8) << getNumber() << "Type: " << std::setw(30) << getType() << "Evolved Form: "
-        << getEvolvedForm() << "\n";
+  //  outs << std::left << "Gen: " << std::setw(4) << getGen() << "Name: " << std::setw(14) << getName()
+    //    << "Number: " << std::setw(8) << getNumber() << "Type: " << std::setw(30) << getType() << "Evolved Form: "
+      //  << getEvolvedForm() << "\n";
 
+      fmt::print
 }
 
 void Pokemon::read(std::istream& ins) {
