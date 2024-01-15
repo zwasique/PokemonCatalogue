@@ -66,7 +66,7 @@ Noibat; 714; 6; Flying/Dragon; Noivern;
 Noivern; 715; 6; Flying/Dragon; None;
 Xerneas; 716; 6; Fairy; None;
 Yveltal; 717; 6; Dark/Flying; None;
-Zygarde; 718; 6; Dragon/Ground; Zygarde 10% Forme, Zygarde 50% Forme, Zygarde Complete Forme;
+Zygarde; 718; 6; Dragon/Ground; Zygarde 10%/50%/Complete Forme;
 Diancie; 719; 6; Rock/Fairy; Mega Diancie;
 Hoopa; 720; 6; Psychic/Ghost; Hoopa Unbound;
 Volcanion; 721; 6; Fire/Water; None;
