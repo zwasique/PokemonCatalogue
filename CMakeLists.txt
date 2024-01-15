@@ -14,10 +14,12 @@ find_package(fmt REQUIRED)
 
 add_executable(PokemonCatalogue ${SOURCES})
 
-target_link_libraries(PokemonCatalogue PRIVATE fmt::fmt)
-
 target_include_directories(PokemonCatalogue PRIVATE 
 ${CMAKE_SOURCE_DIR}/../include)
+
+target_compile_options(PokemonCatalogue PRIVATE /utf-8)
+
+target_link_libraries(PokemonCatalogue PRIVATE fmt::fmt)
 
 set_target_properties(PokemonCatalogue PROPERTIES
         CXX_STANDARD 20
