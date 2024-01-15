@@ -26,10 +26,4 @@ set_target_properties(PokemonCatalogue PROPERTIES
         CXX_STANDARD_REQUIRED YES
         CXX_EXTENSIONS NO)
 
-add_custom_target(clean_up
-	DEPENDS PokemonCatalogue
-	COMMAND ${CMAKE_COMMAND} -E echo "Cleaning up..."
-	COMMAND ${CMAKE_SOURCE_DIR}/clean.sh
-)
-
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT PokemonCatalogue)
