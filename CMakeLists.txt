@@ -17,7 +17,7 @@ add_executable(PokemonCatalogue ${SOURCES})
 target_include_directories(PokemonCatalogue PRIVATE 
 ${CMAKE_SOURCE_DIR}/../include)
 
-target_compile_options(PokemonCatalogue PRIVATE /utf-8)
+target_compile_options(PokemonCatalogue PRIVATE -fexec-charset=UTF-8)
 
 target_link_libraries(PokemonCatalogue PRIVATE fmt::fmt)
 
