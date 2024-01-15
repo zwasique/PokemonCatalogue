@@ -9,7 +9,7 @@
 #define MAGENTA_TEXT "\033[38;5;200m"
 
 
-#define WHITE_TEXT "\033[1;37m"
+#define WHITE_TEXT "\033[0;37m"
 #define YELLOW_TEXT "\033[38;5;220m"
 
 
