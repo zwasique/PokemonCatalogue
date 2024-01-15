@@ -8,7 +8,7 @@ From here, you will (not yet implemented) be able to view your Pokemon sorted nu
 ## Project Status
 My current goal is to correctly implement the Catalogue::sortType(const std::string type) function, which is useed to list only pokemon of a certain type.
 
-# Requirements
+## Requirements
 - CMake version 3.25 or higher
 - the [fmt](https://github.com/fmtlib/fmt) library version 10.0.0 or higher
 
