@@ -34,7 +34,7 @@ void Pokemon::display(std::ostream &outs) const
 {
   // std::cerr << "Void Pokemon::display(std::ostream &outs) const";
 
-     fmt::print("{:4}{:<6}{:6}{:20}{:6}{:<8}{:6}{:60}{:10}{:20}\n","Gen: ",  getGen(), "Name: ", getName(), "Num: ", getNumber(), "Type: ", getType(),"Evolved Form: ",  getEvolvedForm());
+     fmt::print("{:4}{:<6}{:6}{:20}{:6}{:<10}{:6}{:44}{:10}{:20}\n","Gen: ",  getGen(), "Name: ", getName(), "Num: ", getNumber(), "Type: ", getType(),"Evolved Form: ",  getEvolvedForm());
 
 //	fmt::print("{:10}\n","Gen: ",  getGen(), "Name: ","{:20}",  getName(), "Num: ","{:6}",  getNumber(), "Type: ", "{:20}", getType(),"Evolved Form: ", "{:20}",  getEvolvedForm());
 }
