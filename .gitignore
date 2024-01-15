@@ -1,5 +1,5 @@
 # .gitignore
-
+cmake-build-debug/
 PokemonCatalogue
 CMakeLists.txt.user
 CMakeCache.txt
