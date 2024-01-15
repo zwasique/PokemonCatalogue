@@ -1,5 +1,0 @@
-# ninja log v5
-1935	2108	1703353865940724598	PokemonCatalogue	2b1f4ab5e11a51ad
-25	2680	1703353363301877437	CMakeFiles/PokemonCatalogue.dir/src/Catalogue.cpp.o	d92e1a2d129f31f9
-27	2148	1703199856505246327	CMakeFiles/PokemonCatalogue.dir/src/PokemonCatalogue.cpp.o	d1fd623c28351657
-77	1935	1703353865762435266	CMakeFiles/PokemonCatalogue.dir/src/Pokemon.cpp.o	7e76db372560b3d6
