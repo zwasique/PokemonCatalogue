@@ -1,7 +1,7 @@
 #include "../include/Catalogue.h"
 #include <fstream>
 #include <filesystem>
-
+#include <algorithm>
 //namespace fs = std::__fs::filesystem;
 
 Catalogue::iterator Catalogue::begin()

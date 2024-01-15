@@ -10,7 +10,7 @@ set(SOURCES
         src/Pokemon.cpp
         src/Catalogue.cpp)
 
-find_package(fmt REQUIRED)
+find_package(fmt 10.0.0 REQUIRED)
 
 add_executable(PokemonCatalogue ${SOURCES})
 
