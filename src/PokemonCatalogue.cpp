@@ -27,7 +27,7 @@ int main () {
     std::set<std::string> chosenFiles;
     Catalogue pokemonCatalogue;
 
-    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?\n\n" << WHITE_TEXT;
+    std::cout << MAGENTA_TEXT << "Which Pokemon generations do you wish to include?\n" << WHITE_TEXT;
     chooseFiles(chosenFiles, direction);
     std::cout << RESET_TEXT;
 
@@ -35,7 +35,7 @@ int main () {
 
 
     std::cout << std::endl;
-    std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?\n\n" << WHITE_TEXT;
+    std::cout << YELLOW_TEXT << "Now you can display Pokemon. How would you like to sort them?\n" << WHITE_TEXT;
     pokemonSortMenu(pokemonCatalogue, direction);
     std::cout << RESET_TEXT;
 

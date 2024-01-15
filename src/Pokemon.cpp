@@ -52,7 +52,7 @@ void Pokemon::read(std::istream& ins) {
      try {
          this->number = std::stoi(numberString, nullptr, 10);
      } catch (std::exception &err) {
-         std::cerr << "Failed Conversion\n";
+  //     std::cerr << "Failed Conversion\n";
      }
 
 
@@ -61,7 +61,7 @@ void Pokemon::read(std::istream& ins) {
      try {
          this->gen = std::stoi(genString, nullptr, 10);
      } catch (std::exception &err) {
-         std::cerr << "Failed Conversion\n";
+//       std::cerr << "Failed Conversion\n";
      }
 
      std::getline(ins, this->type, ';');
