@@ -2,7 +2,7 @@
 #include <fstream>
 #include <filesystem>
 #include <algorithm>
-namespace fs = std::__fs::filesystem;
+namespace fs = std::filesystem;
 
 Catalogue::iterator Catalogue::begin()
 {
@@ -27,11 +27,11 @@ Catalogue::PokemonCatalogue Catalogue::getAllPokemon() const {
 
 void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles){
     //std::cerr<< "void Catalogue::fillCatalogue(const std::set<std::string>& generationFiles)";
-    std::__fs::filesystem::path parentPath = "..";
-    std::__fs::filesystem::path withDirectory = parentPath / "pokemonGenerationFiles";
+    fs::path  parentPath = "..";
+    fs::path  withDirectory = parentPath / "pokemonGenerationFiles";
 
     for (const std::string& file: generationFiles) {
-        std::__fs::filesystem::path fullPath = withDirectory / file;
+        fs::path fullPath = withDirectory / file;
         //std::string stringPath = fullPath.string();
         std::ifstream fileStream(fullPath);
 
