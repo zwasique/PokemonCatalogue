@@ -6,7 +6,8 @@ for (Pokemon monster: toSort.allPokemon){
 		std::cout << Pokemon;
 	}	
 }
-
+std::transform(data.begin(), data.end(), data.begin(),
+    [](unsigned char c){ return std::tolower(c); });
 
 std::vector<int>::iterator it;
 it = std::find(vec.begin(), vec.end(), ser);
