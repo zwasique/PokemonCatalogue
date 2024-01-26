@@ -6,7 +6,7 @@ This program allows you to select from Generations 1-9 to select which Pokémon 
 From here, you will (not yet implemented) be able to view your Pokemon sorted numerically, alphabetically, and by type.
 
 ## Project Status
-My current goal is to correctly implement the Catalogue::sortType(const std::string type) function, which is useed to list only pokemon of a certain type.
+I am about to start adding some of the unit tests that I should have added a long time ago..
 
 ## Requirements
 - CMake version 3.25 or higher
