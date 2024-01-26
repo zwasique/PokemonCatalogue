@@ -69,28 +69,22 @@ void Catalogue::display(std::ostream& outs) const {
 
 void Catalogue::sortAlpha() const
 {
-    //use copy constructor
     Catalogue toSort(*this);
-    //sort the copied version
-    //call display function
     std::sort(toSort.begin(), toSort.end(), [] (Pokemon& one, Pokemon& two){
            return one.getName() < two.getName();});
     std::cout << toSort;
 }
 
 
-void Catalogue::sortType(const std::string type) const
+void Catalogue::sortType(const std::string& type) const
 {
-	Catalogue toSort();
+	Catalogue toSort;
 
     for (const Pokemon &monster: this->getAllPokemon()) {
         int pos = monster.getType().find(type);
-        if (pos != monster.getType().length())
+        if (pos < monster.getType().length())
             toSort.allPokemon.push_back(monster);
     }
 
 	std::cout << toSort;
-    //use copy constructor
-    //sort copied version
-    //call display function
 }
