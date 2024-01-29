@@ -1,8 +1,0 @@
-str.find("world") != std::string::npos;
-
-
-
-
-for alphabetical sort:
-#include
-std::sort(numbers.begin(), numbers.end(), std::greater<int>());
