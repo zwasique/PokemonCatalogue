@@ -2,6 +2,10 @@
 #include <fstream>
 #include <filesystem>
 #include <algorithm>
+
+#define WHITE_TEXT "\033[0;37m"
+#define RESET_TEXT "\033[0m"
+
 namespace fs = std::filesystem;
 
 Catalogue::iterator Catalogue::begin()
@@ -69,15 +73,18 @@ void Catalogue::display(std::ostream& outs) const {
 
 void Catalogue::sortAlpha() const
 {
+        std::cout << RESET_TEXT <<  "----------------------------\n" << WHITE_TEXT;
     Catalogue toSort(*this);
     std::sort(toSort.begin(), toSort.end(), [] (Pokemon& one, Pokemon& two){
            return one.getName() < two.getName();});
     std::cout << toSort;
+        std::cout << RESET_TEXT <<  "----------------------------\n" << WHITE_TEXT;
 }
 
 
 void Catalogue::sortType(const std::string& type) const
 {
+	std::cout << RESET_TEXT <<  "----------------------------\n" << WHITE_TEXT;
 	Catalogue toSort;
 
     for (const Pokemon &monster: this->getAllPokemon()) {
@@ -87,4 +94,5 @@ void Catalogue::sortType(const std::string& type) const
     }
 
 	std::cout << toSort;
+        std::cout << RESET_TEXT <<  "----------------------------\n" << WHITE_TEXT;
 }
