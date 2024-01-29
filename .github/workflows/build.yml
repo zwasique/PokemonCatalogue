@@ -21,7 +21,7 @@ jobs:
       with:
         cmake-version: 'latest'  # Use the latest version
 
-    - Install fmt
+    - name: Install fmt
       run: |
         sudo apt-get update
         sudo apt-get install -y libfmt-dev
