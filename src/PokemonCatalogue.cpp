@@ -7,8 +7,6 @@
 
 
 #define MAGENTA_TEXT "\033[38;5;200m"
-
-
 #define WHITE_TEXT "\033[0;37m"
 #define YELLOW_TEXT "\033[38;5;220m"
 
@@ -59,8 +57,9 @@ std::set<std::string> chooseFiles(std::set<std::string>& filesToRead, std::strin
                 exit(0);
         }
 
-        std::cout << "Enter a generation number 1-9, a to add all files, c to continue, or e to exit the program: ";
+        std::cout << "Enter a generation number 1-9, a to add all files, c to continue, or e to exit the program: " << RESET_TEXT;
         std::cin >> instruction;
+	std::cout << WHITE_TEXT;
 
     }
 
@@ -87,15 +86,17 @@ void pokemonSortMenu(const Catalogue& catalogue, std::string instruction){
             else if (instruction == "a") {//sort Pokemon alphabetically by name
                 catalogue.sortAlpha();}
             else if (instruction == "t"){ //see all Pokemon of a type, or organise by type
-                std::cout << "Enter a type of pokemon to sort by: ";
+                std::cout << "Enter a type of pokemon to sort by: " << RESET_TEXT;
                 std::string type;
                 std::cin >> type;
+		std::cout << WHITE_TEXT;
                 catalogue.sortType(type);}
             else if (instruction == "e"){
                 exit(0);}
 
-            std::cout << "Enter g to sort by generation, t to sort by type, and a to sort alphabetically, and e to exit: ";
+            std::cout << "Enter g to sort by generation, t to sort by type, and a to sort alphabetically, and e to exit: " << RESET_TEXT;
             std::cin >> instruction;
+	    std::cout << WHITE_TEXT;
 
 
          }
